@@ -32,14 +32,14 @@
 				var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
 				var geocoder = new google.maps.Geocoder();
-				/*
-					Graphic Design
-					Interior Design
-					Landscape Architecture
-					Architecture
-					Industrial Design
-					Fashion
-				*/
+				var disciplines = [
+					'graphic design',
+					'interior design',
+					'architecture',
+					'landscape architecture',
+					'industrial design',
+					'fashion'
+				];
 				var points = [
 					{
 						"address": "York University, Toronto, Ontario, Canada",
@@ -144,6 +144,18 @@
 					});
 				};
 				$$('#filter_panel input[type="checkbox"]').addEvent('click', toggle_discipline);
+
+				// Add counts
+				disciplines.each (function ($discipline, $index) {
+					var $count = 0;
+					points.each (function ($point, $point_index) {
+						if ($point.disciplines.indexOf ($discipline) >= 0)
+						{
+							$count++;
+						}
+					});
+					$$('#discipline_' + $index + ' var').set ('html', '(' + $count + ')');
+				});
 			});
 		</script>
 
@@ -170,12 +182,12 @@
 			<h2>Discipline</h2>
 			<div class="contents">
 				<ul>
-					<li><label><input type="checkbox" name="disciplines[]" value="graphic design" checked="checked" /> Graphic Design</label></li>
-					<li><label><input type="checkbox" name="disciplines[]" value="interior design" checked="checked" /> Interior Design</label></li>
-					<li><label><input type="checkbox" name="disciplines[]" value="architecture" checked="checked" /> Architecture</label></li>
-					<li><label><input type="checkbox" name="disciplines[]" value="landscape architecture" checked="checked" /> Landscape Architecture</label></li>
-					<li><label><input type="checkbox" name="disciplines[]" value="industrial design" checked="checked" /> Industrial Design</label></li>
-					<li><label><input type="checkbox" name="disciplines[]" value="fashion" checked="checked" /> Fashion</label></li>
+					<li><label id="discipline_0"><input type="checkbox" name="disciplines[]" value="graphic design" checked="checked" /> Graphic Design <var></var></label></li>
+					<li><label id="discipline_1"><input type="checkbox" name="disciplines[]" value="interior design" checked="checked" /> Interior Design <var></var></label></li>
+					<li><label id="discipline_2"><input type="checkbox" name="disciplines[]" value="architecture" checked="checked" /> Architecture <var></var></label></li>
+					<li><label id="discipline_3"><input type="checkbox" name="disciplines[]" value="landscape architecture" checked="checked" /> Landscape Architecture <var></var></label></li>
+					<li><label id="discipline_4"><input type="checkbox" name="disciplines[]" value="industrial design" checked="checked" /> Industrial Design <var></var></label></li>
+					<li><label id="discipline_5"><input type="checkbox" name="disciplines[]" value="fashion" checked="checked" /> Fashion <var></var></label></li>
 				</ul>
 			</div>
 		</div>
