@@ -1,24 +1,37 @@
 
 	@import '_mixins.less';
 
-	/*--------------------------------------------------------------------------
-	Typography
-	--------------------------------------------------------------------------*/
-	@type {
-		@font {
-			font-family: "felt-tip-roman-1", "felt-tip-roman-2", Helvetica, Arial, sans-serif;
-		}
-		@size {
-			@small {
-			}
-			@normal {
-			}
-			@medium {
-			}
-			@large {
-			}
-		}
+	.bubble_description {
+		margin: 10px;
 	}
-	p {
-		margin: 10px 0;
+
+	html {
+		height: 100%;
+	}
+	body {
+		height: 100%;
+		width: 800px;
+		margin: 0;
+		padding: 0;
+		margin: 0 auto;
+	}
+	* {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	#map_canvas {
+		float: left;
+		height: 100%;
+		width: 600px;
+	}
+	#filter_panel {
+		float: right;
+		width: 200px;
+		padding-left: 20px;
+
+		ul {
+			list-style-type: none;
+		}
 	}
