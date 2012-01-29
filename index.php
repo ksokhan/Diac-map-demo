@@ -92,13 +92,13 @@
 
 				// Plot the markers
 				points.each(function (point, index) {
-					// GeoCode the address, and when it's done, move the map to that location and plot a marker
+					// GeoCode the address, and when it's done, build the marker
 					geocoder.geocode({ address: point.address }, function (results, status) {
 						// Got the address!
 						if (status == google.maps.GeocoderStatus.OK) {
 							// Create a marker
 							point.marker = new google.maps.Marker({
-								"map": map,
+								"map": null,
 								"position": results[0].geometry.location,
 								"title": point.label
 							});
@@ -182,12 +182,12 @@
 			<h2>Discipline</h2>
 			<div class="contents">
 				<ul>
-					<li><label id="discipline_0"><input type="checkbox" name="disciplines[]" value="graphic design" checked="checked" /> Graphic Design <var></var></label></li>
-					<li><label id="discipline_1"><input type="checkbox" name="disciplines[]" value="interior design" checked="checked" /> Interior Design <var></var></label></li>
-					<li><label id="discipline_2"><input type="checkbox" name="disciplines[]" value="architecture" checked="checked" /> Architecture <var></var></label></li>
-					<li><label id="discipline_3"><input type="checkbox" name="disciplines[]" value="landscape architecture" checked="checked" /> Landscape Architecture <var></var></label></li>
-					<li><label id="discipline_4"><input type="checkbox" name="disciplines[]" value="industrial design" checked="checked" /> Industrial Design <var></var></label></li>
-					<li><label id="discipline_5"><input type="checkbox" name="disciplines[]" value="fashion" checked="checked" /> Fashion <var></var></label></li>
+					<li><label id="discipline_0"><input type="checkbox" name="disciplines[]" value="graphic design" /> Graphic Design <var></var></label></li>
+					<li><label id="discipline_1"><input type="checkbox" name="disciplines[]" value="interior design" /> Interior Design <var></var></label></li>
+					<li><label id="discipline_2"><input type="checkbox" name="disciplines[]" value="architecture" /> Architecture <var></var></label></li>
+					<li><label id="discipline_3"><input type="checkbox" name="disciplines[]" value="landscape architecture" /> Landscape Architecture <var></var></label></li>
+					<li><label id="discipline_4"><input type="checkbox" name="disciplines[]" value="industrial design" /> Industrial Design <var></var></label></li>
+					<li><label id="discipline_5"><input type="checkbox" name="disciplines[]" value="fashion" /> Fashion <var></var></label></li>
 				</ul>
 			</div>
 		</div>
