@@ -1,0 +1,68 @@
+
+	/*--------------------------------------------------------------------------
+	Round Corners
+	--------------------------------------------------------------------------*/
+	@round_corners (@radius: 5px) {
+		border-radius: @radius;
+		-webkit-border-radius: @radius;
+		-moz-border-radius: @radius;
+	}
+
+	/*--------------------------------------------------------------------------
+	Round Top, Right, Bottom, Left corners
+	--------------------------------------------------------------------------*/
+	@round_each_corner (@top_left: 5px; @top_right: 5px; @bottom_right: 5px; @bottom_left: 5px) {
+		-webkit-border-top-left-radius: @top_left;
+		-moz-border-radius-topleft: @top_left;
+		border-top-left-radius: @top_left;
+
+		-moz-border-radius-topright: @top_right;
+		-webkit-border-top-right-radius: @top_right;
+		border-top-right-radius: @top_right;
+
+		-moz-border-radius-bottomright: @bottom_right;
+		-webkit-border-bottom-right-radius: @bottom_right;
+		border-bottom-right-radius: @bottom_right;
+
+		-moz-border-radius-bottomleft: @bottom_left;
+		-webkit-border-bottom-left-radius: @bottom_left;
+		border-bottom-left-radius: @bottom_left;
+	}
+
+	/*--------------------------------------------------------------------------
+	Give it a Shadow
+	--------------------------------------------------------------------------*/
+	@box_shadow (@x; @y; @size; @color) {
+		-moz-box-shadow: @x @y @size @color;
+		-webkit-box-shadow: @x @y @size @color;
+		box-shadow: @x @y @size @color;
+	}
+
+	/*--------------------------------------------------------------------------
+	Gradient
+	--------------------------------------------------------------------------*/
+	@gradient (@from; @to) {
+		background-image: -moz-linear-gradient(top, @from, @to);
+		background-image: -webkit-linear-gradient(@from, @to);
+	}
+
+	/*--------------------------------------------------------------------------
+	Rotate
+	--------------------------------------------------------------------------*/
+	@rotate (@degrees: 7.5deg) {
+		-moz-transform: rotate(@degrees);
+		-o-transform: rotate(@degrees);
+		-webkit-transform: rotate(@degrees);
+		-ms-transform: rotate(@degrees);
+		transform: rotate(@degrees);
+	}
+
+	/*--------------------------------------------------------------------------
+	Switch Box Model (border-box or content-box)
+	--------------------------------------------------------------------------*/
+	@box-sizing (@size_of: border-box) {
+		-moz-box-sizing: @size_of;
+		-webkit-box-sizing: @size_of;
+		-ms-box-sizing: @size_of;
+		box-sizing: @size_of;
+	}
