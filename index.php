@@ -9,8 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="./css/html5reset.css" />
 
 		<!--MooTools Core-->
-		<script type="text/javascript" src="./js/mootools-core-1.4.1.js"></script>
-		<!--<script type="text/javascript" src="/js/mootools-more-1.4.0.1.js"></script>-->
+		<script type="text/javascript" src="js/mootools-core-1.4.1.js"></script>
+		<!--<script type="text/javascript" src="js/mootools-more-1.4.0.1.js"></script>-->
 
 		<!--HTML5 Shiv for IE < 9-->
 		<!--[if lt IE 9]>
