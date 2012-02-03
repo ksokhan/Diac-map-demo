@@ -6,10 +6,10 @@
 		<title>DIAC MAP SANDBOX</title>
 
 		<!--HTML5 RESET-->
-		<link rel="stylesheet" type="text/css" href="/css/html5reset.css" />
+		<link rel="stylesheet" type="text/css" href="./css/html5reset.css" />
 
 		<!--MooTools Core-->
-		<script type="text/javascript" src="/js/mootools-core-1.4.1.js"></script>
+		<script type="text/javascript" src="./js/mootools-core-1.4.1.js"></script>
 		<!--<script type="text/javascript" src="/js/mootools-more-1.4.0.1.js"></script>-->
 
 		<!--HTML5 Shiv for IE < 9-->
@@ -169,13 +169,13 @@
 
 		<!--LessPHP-->
 		<?php
-			require 'libraries/lessphp/lessc.inc.php';
+			require './libraries/lessphp/lessc.inc.php';
 
-			if (file_exists('css/_global.less'))
+			if (file_exists('./css/_global.less'))
 			{
 				try {
-					lessc::ccompile('css/_global.less', 'css/_compiled_css/_global.css');
-					echo '<link rel="stylesheet" type="text/css" href="/css/_compiled_css/_global.css" />';
+					lessc::ccompile('./css/_global.less', './css/_compiled_css/_global.css');
+					echo '<link rel="stylesheet" type="text/css" href="./css/_compiled_css/_global.css" />';
 				} catch (exception $ex) {
 					exit('lessc fatal error:<br />'.$ex->getMessage());
 				}
