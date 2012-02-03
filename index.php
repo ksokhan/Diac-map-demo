@@ -12,8 +12,6 @@
 		<script type="text/javascript" src="/js/mootools-core-1.4.1.js"></script>
 		<!--<script type="text/javascript" src="/js/mootools-more-1.4.0.1.js"></script>-->
 
-
-
 		<!--HTML5 Shiv for IE < 9-->
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -24,11 +22,21 @@
 
 		<script type="text/javascript">
 			window.addEvent('load', function () {
+				var lvstyle = [ { featureType: "water", stylers: [ { hue: "#0077ff" }, { saturation: -37 }, { lightness: 13 } ] },{ elementType: "labels", stylers: [ { visibility: "off" } ] },{ featureType: "administrative", elementType: "geometry", stylers: [ { lightness: 49 }, { visibility: "simplified" } ] },{ featureType: "poi", stylers: [ { visibility: "off" } ] },{ featureType: "road", stylers: [ { visibility: "off" } ] },{ } ];
+				
 				var myOptions = {
 				  "center": new google.maps.LatLng(-34.397, 150.644),
 				  "zoom": 10,
-				  "mapTypeId": google.maps.MapTypeId.ROADMAP
+				  "mapTypeId": google.maps.MapTypeId.ROADMAP,
+				  mapTypeControl: false,
+				  streetViewControl: false,
+				  styles: lvstyle,
+				  zoomControlOptions: {
+				     position: google.maps.ControlPosition.LEFT_BOTTOM
+				  }
 				};
+				
+				
 				var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
 				var geocoder = new google.maps.Geocoder();
