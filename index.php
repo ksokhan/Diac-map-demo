@@ -1,3 +1,9 @@
+<?php
+	
+	error_reporting(E_ALL);
+	ini_set('display_errors', '1');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +28,7 @@
 
 		<script type="text/javascript">
 			window.addEvent('load', function () {
-				var lvstyle = [ { featureType: "water", stylers: [ { hue: "#0077ff" }, { saturation: -37 }, { lightness: 13 } ] },{ elementType: "labels", stylers: [ { visibility: "off" } ] },{ featureType: "administrative", elementType: "geometry", stylers: [ { lightness: 49 }, { visibility: "simplified" } ] },{ featureType: "poi", stylers: [ { visibility: "off" } ] },{ featureType: "road", stylers: [ { visibility: "off" } ] },{ } ];
+				var lvstyle = [ { featureType: "water", stylers: [ { hue: "#0077ff" }, { saturation: -37 }, { lightness: 13 } ] },{ featureType: "administrative", elementType: "geometry", stylers: [ { lightness: 49 }, { visibility: "simplified" } ] },{ featureType: "poi", stylers: [ { visibility: "off" } ] },{ } ];
 				
 				var myOptions = {
 				  "center": new google.maps.LatLng(-34.397, 150.644),
@@ -170,12 +176,13 @@
 		<!--LessPHP-->
 		<?php
 			require './libraries/lessphp/lessc.inc.php';
-
-			if (file_exists('./css/_global.less'))
+			
+			if (file_exists('css/_global.less'))
 			{
+				
 				try {
-					lessc::ccompile('./css/_global.less', './css/_compiled_css/_global.css');
-					echo '<link rel="stylesheet" type="text/css" href="./css/_compiled_css/_global.css" />';
+					lessc::ccompile('css/_global.less', 'css/_compiled_css/_global.css');
+					echo '<link rel="stylesheet" type="text/css" href="css/_compiled_css/_global.css" />';
 				} catch (exception $ex) {
 					exit('lessc fatal error:<br />'.$ex->getMessage());
 				}
