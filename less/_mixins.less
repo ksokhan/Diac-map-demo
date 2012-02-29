@@ -1,0 +1,131 @@
+
+	/*--------------------------------------------------------------------------
+	Round Top, Right, Bottom, Left corners
+	--------------------------------------------------------------------------*/
+	.border-radius-each (@top_left: 0px, @top_right: 0px, @bottom_right: 0px, @bottom_left: 0px) {
+		-webkit-border-top-left-radius: @top_left;
+		-moz-border-radius-topleft: @top_left;
+		border-top-left-radius: @top_left;
+
+		-moz-border-radius-topright: @top_right;
+		-webkit-border-top-right-radius: @top_right;
+		border-top-right-radius: @top_right;
+
+		-moz-border-radius-bottomright: @bottom_right;
+		-webkit-border-bottom-right-radius: @bottom_right;
+		border-bottom-right-radius: @bottom_right;
+
+		-moz-border-radius-bottomleft: @bottom_left;
+		-webkit-border-bottom-left-radius: @bottom_left;
+		border-bottom-left-radius: @bottom_left;
+	}
+
+	/*--------------------------------------------------------------------------
+	Round Corners
+	--------------------------------------------------------------------------*/
+	.border-radius (@radius: 0px) {
+		-webkit-border-radius: @radius;
+		-moz-border-radius: @radius;
+		border-radius: @radius;
+	}
+
+	/*--------------------------------------------------------------------------
+	Give it a Shadow
+	--------------------------------------------------------------------------*/
+	.box-shadow () {
+		-moz-box-shadow: @arguments;
+		-webkit-box-shadow: @arguments;
+		box-shadow: @arguments;
+	}
+
+	/*--------------------------------------------------------------------------
+	Gradient
+	--------------------------------------------------------------------------*/
+	.gradient (@from, @to) {
+		background-image: -moz-linear-gradient(top, @from, @to);
+		background-image: -webkit-linear-gradient(@from, @to);
+	}
+	.gradient-overlay (@colour, @opacity) {
+		.gradient (fade(@colour, @opacity), fade(@colour, 0%));
+	}
+	.gradient-overlay-reverse (@colour, @opacity) {
+		.gradient (fade(@colour, 0%), fade(@colour, @opacity));
+	}
+
+	/*--------------------------------------------------------------------------
+	Rotate
+	--------------------------------------------------------------------------*/
+	.rotate (@degrees: 7.5deg) {
+		-moz-transform: rotate(@degrees);
+		-o-transform: rotate(@degrees);
+		-webkit-transform: rotate(@degrees);
+		-ms-transform: rotate(@degrees);
+		transform: rotate(@degrees);
+	}
+
+	/*--------------------------------------------------------------------------
+	Switch Box Model (border-box or content-box)
+	--------------------------------------------------------------------------*/
+	.better-box-model () {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	/*--------------------------------------------------------------------------
+	Transitions (Delay isn't used here...)
+	--------------------------------------------------------------------------*/
+	.transitions (@properties: all, @duration: 0.3s, @function: ease-in-out, @delay: 0s) {
+		transition-property: @properties;
+		transition-duration: @duration;
+		transition-timing-function: @function;
+		-webkit-transition-property: @properties;
+		-webkit-transition-duration: @duration;
+		-o-transition-property: @properties;
+		-o-transition-duration: @duration;
+	}
+
+	/*--------------------------------------------------------------------------
+	3D Button/Bevel Style
+	--------------------------------------------------------------------------*/
+	.bevel (@colour, @depth) {
+		background-color: @colour;
+		border: 1px solid @colour;
+		border-right-color: mix(black, @colour, 10%);
+		border-left-color: mix(black, @colour, 20%);
+		border-bottom-color: mix(black, @colour, 30%);
+		.gradient-overlay (white, 40%);
+		.box-shadow (~"0px @{depth}px 0px 0px rgba(255,255,255,0.5) inset, 0px 1px 3px 1px rgba(0,0,0,0.2)");
+	}
+	/* Bevels like a button, but no text shadow */
+	.bevel-button-box (@colour, @depth) {
+		.bevel (@colour, @depth);
+		cursor: pointer;
+
+		&:focus,
+		&:active {
+			background-color: mix(black, @colour, 20%) !important;
+		}
+		&:hover {
+			background-color: mix(white, @colour, 20%);
+		}
+	}
+	/* For small, actual buttons (with text shadow) */
+	.bevel-button (@colour, @depth) {
+		.bevel-button-box (@colour, @depth);
+		text-shadow: 0px -1px 1px mix(black, @colour, 10%), 0px 1px 1px mix(black, @colour, 50%);
+	}
+
+	/*--------------------------------------------------------------------------
+	Utilities
+	--------------------------------------------------------------------------*/
+	.clear-fix () {
+		&:after {
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+	}

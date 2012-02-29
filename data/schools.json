@@ -1,0 +1,282 @@
+[
+	{
+		"name": "Algonquin College",
+		"program_duration": "3 Year Graphic Design Diploma",
+		"address": "1385 Woodroffe Avenue",
+		"city": "Nepean ON K2G 1V8",
+		"url": "www.algonquincollege.com",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 45.346822,
+			"y": -75.76027039999997
+		}
+	},
+	{
+		"name": "Cambrian College",
+		"program_duration": "3 Year Graphic Design Diploma",
+		"address": "1400 Barrydowne Road",
+		"city": "Sudbury ON P1B 8K9",
+		"url": "www.cambrianc.on.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 46.5297829,
+			"y": -80.94112989999996
+		}
+	},
+	{
+		"name": "Canadore College",
+		"program_duration": "3 Year Graphic Design Diploma",
+		"address": "",
+		"city": "North Bay ON P1B 8K9",
+		"url": "www.canadorec.on.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 46.311158,
+			"y": -79.46182599999997
+		}
+	},
+	{
+		"name": "Centennial College Centre for Creative Communications",
+		"program_duration": "3 Year Graphic Design Diploma",
+		"address": "951 Carlaw Avenue",
+		"city": "Toronto, ON M4K 3M2",
+		"url": "www.centennialcollege.ca/future/ccc_gdm_index.jsp",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 43.6843602,
+			"y": -79.3495168
+		}
+	},
+	{
+		"name": "Conestoga College",
+		"program_duration": "3 Year Graphic Design Diploma",
+		"address": "299 Doon Valley Drive",
+		"city": "Kitchener ON N2G 4M4",
+		"url": "www.conestogac.on.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 43.3917904,
+			"y": -80.40766710000003
+		}
+	},
+	{
+		"name": "Durham College",
+		"program_duration": "3 Year Graphic Design Diploma",
+		"address": "2000 Simcoe St. North",
+		"city": "Oshawa ON L1H 7L7",
+		"url": "www.durhamcollege.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 43.9151625,
+			"y": -78.87117209999997
+		}
+	},
+	{
+		"name": "Fanshawe College of Applied Arts & Technology",
+		"program_duration": "3 Year Graphic Design Diploma",
+		"address": "1460 Oxford Street East",
+		"city": "London ON N5Y 5R6",
+		"url": "www.fanshawec.on.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 43.0112762,
+			"y": -81.19903640000001
+		}
+	},
+	{
+		"name": "George Brown College",
+		"program_duration": "3 Year Graphic Design Diploma",
+		"address": "200 King Street East St. James Campus",
+		"city": "Toronto ON M5A 3W8",
+		"url": "www.gbrownc.on.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 43.6509109,
+			"y": -79.37021749999997
+		}
+	},
+	{
+		"name": "Georgian College",
+		"program_duration": "3 Year Graphic Design Diploma",
+		"address": "1 Georgian Drive",
+		"city": "Barrie ON L4M 3X9",
+		"url": "www.georcoll.on.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 44.411743,
+			"y": -79.66903200000002
+		}
+	},
+	{
+		"name": "Humber College",
+		"program_duration": "3 Year Graphic Design Diploma",
+		"address": "Media Studies & Information Technology 3199 Lake Shore Blvd W, F102",
+		"city": "Toronto, ON M8V 1K8",
+		"url": "www.humber.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 43.5964458,
+			"y": -79.520648
+		}
+	},
+	{
+		"name": "Loyalist College",
+		"program_duration": "3 Year Graphic Design Diploma to commence Sept. 2012",
+		"address": "376 Wallbridge-Loyalist Road",
+		"city": "Belleville, ON K8N 5B9",
+		"url": "www.loyalistcollege.com",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 44.155792,
+			"y": -77.429795
+		}
+	},
+	{
+		"name": "Niagara College",
+		"program_duration": "3 Year Graphic Design Diploma",
+		"address": "300 Woodlawn Road",
+		"city": "Welland, Ontario L3C 7L3",
+		"url": "www.niagaracollege.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 43.0129898,
+			"y": -79.267517
+		}
+	},
+	{
+		"name": "Ontario College of Art & Design",
+		"program_duration": "4 Year Bachelor of Design",
+		"address": "100 McCaul Street",
+		"city": "Toronto ON M5T 1W1",
+		"url": "www.ocad.on.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 43.6525911,
+			"y": -79.39071050000001
+		}
+	},
+	{
+		"name": "St. Clair College",
+		"program_duration": "3 Year Graphic Design Diploma",
+		"address": "2000 Talbot Rd. West",
+		"city": "Windsor ON N9A 6S4",
+		"url": "www.stclairc.on.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 42.2471644,
+			"y": -83.0187434
+		}
+	},
+	{
+		"name": "St. Lawrence College",
+		"program_duration": "3 Year Graphic Design Diploma",
+		"address": "King & Portsmouth",
+		"city": "Kingston ON K7L 5A6",
+		"url": "www.sl.on.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 44.2205024,
+			"y": -76.52508510000001
+		}
+	},
+	{
+		"name": "Sault College",
+		"program_duration": "3 Year Graphic Design Diploma",
+		"address": "443 Northern Ave",
+		"city": "Sault Ste. Marie ON P6A 5L3",
+		"url": "www.saultc.on.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 46.5340987,
+			"y": -84.31537809999998
+		}
+	},
+	{
+		"name": "Seneca College School of Communications Arts",
+		"program_duration": "3 Year Graphic Design Diploma",
+		"address": "70 The Pond Road",
+		"city": "Toronto ON M3J 3M6",
+		"url": "scaweb.senecac.on.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 43.7708708,
+			"y": -79.4992517
+		}
+	},
+	{
+		"name": "Sheridan College",
+		"program_duration": "joint 4 Year Honours Bachelor of Design with York University",
+		"address": "1430 Trafalgar Road",
+		"city": "Oakville ON L6H 2L1",
+		"url": "www.sheridanc.on.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 43.4722415,
+			"y": -79.69832939999998
+		}
+	},
+	{
+		"name": "York University",
+		"program_duration": "joint 4 Year Honours Bachelor of Design with Sheridan College",
+		"address": "4700 Keele Street",
+		"city": "Toronto ON M3J 1P3",
+		"url": "www.design.yorku.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 43.7734116,
+			"y": -79.4931641
+		}
+	},
+	{
+		"name": "La Cité Collégiale",
+		"program_duration": "3 Year Graphic Design Diploma (Completely French college)",
+		"address": "801 pr. de l Aviation",
+		"city": "Ottawa ON K1K 4R3",
+		"url": "www.lacitec.on.ca",
+		"disciplines": ["graphic design"],
+		"certifications": ["degree", "diploma"],
+		"program_durations": ["3 years", "4 years"],
+		"geocoded_location": {
+			"x": 45.439928,
+			"y": -75.627001
+		}
+	}
+]

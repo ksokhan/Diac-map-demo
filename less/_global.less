@@ -1,0 +1,128 @@
+
+	@import '_mixins.less';
+
+	/*--------------------------------------------------------------------------
+	Config
+	--------------------------------------------------------------------------*/
+	@site_width: 940px;
+	@app_height: 600px;
+	@sidebar_width: 250px;
+	@results_width: @site_width - @sidebar_width;
+
+	/*--------------------------------------------------------------------------
+	Typography
+	--------------------------------------------------------------------------*/
+
+	/*--------------------------------------------------------------------------
+	Body
+	--------------------------------------------------------------------------*/
+	body {
+		width: @site_width;
+		margin: 0 auto;
+	}
+	header {
+		position: relative;
+		height: 100px;
+
+		h1 {
+			position: absolute;
+			top: 50%;
+			line-height: 50px;
+			font-size: 30px;
+			margin-top: -25px;
+		}
+
+		nav {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			margin-top: -25px;
+			line-height: 50px;
+			text-align: right;
+
+			li {
+				display: inline;
+				margin-left: 20px;
+			}
+		}
+	}
+	#content_container {
+		h1 {
+			font-size: 25px;
+			margin: 10px 0;
+		}
+
+		#bread_crumbs {
+			li {
+				display: inline;
+
+				&:not(:last-child):after {
+					content: '>';
+					margin-left: 5px;
+				}
+				&:last-child a {
+					color: black;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	/*--------------------------------------------------------------------------
+	App
+	--------------------------------------------------------------------------*/
+	#app {
+		position: relative;
+		height: @app_height;
+		margin-top: 20px;
+	}
+	#results_area {
+		position: absolute;
+		top: 0;
+		right: @sidebar_width;
+		bottom: 0;
+		left: 0;
+		width: @results_width;
+
+		.view {
+			position: absolute;
+			overflow: auto;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: grey;
+		}
+	}
+
+	/*--------------------------------------------------------------------------
+	Sidebar
+	--------------------------------------------------------------------------*/
+	#sidebar {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: @results_width;
+		width: @sidebar_width;
+		overflow-y: auto;
+
+		.handle {
+			background: #eee;
+			line-height: 20px;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+	}
+
+	/*--------------------------------------------------------------------------
+	View Modes
+	--------------------------------------------------------------------------*/
+	#view_mode_triggers {
+		.active a {
+			color: green;
+		}
+		.inactive a {
+			color: #ccc;
+		}
+	}
