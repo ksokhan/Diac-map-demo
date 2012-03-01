@@ -101,7 +101,7 @@ header nav li {
   right: 0;
   bottom: 0;
   left: 0;
-  background: grey;
+  background: #eee;
 }
 #map_canvas {
   width: 690px;
