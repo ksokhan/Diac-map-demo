@@ -22,6 +22,9 @@
 		<script type="text/javascript" src="/js/classes/SchoolBrowser.js"></script>
 		<script type="text/javascript" src="/js/_global.js"></script>
 
+		<!-- Google Map API -->
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHXocBCL0RRUGklPm1A6_X_pwy2yJ1NL8&sensor=false"></script>
+
 		<!-- Custom Script -->
 		<script type="text/javascript">
 			window.addEvent ('domready', function () {
@@ -61,7 +64,7 @@
 				<!-- This is where the map or list views are shown -->
 				<div id="results_area">
 					<div class="view" id="map_view">
-						MAP VIEW
+						<div id="map_canvas"></div>
 					</div>
 					<div class="view" id="list_view">
 						LIST VIEW

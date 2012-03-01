@@ -6,8 +6,8 @@
 		"city": "Nepean ON K2G 1V8",
 		"url": "www.algonquincollege.com",
 		"disciplines": ["graphic design"],
-		"certifications": ["degree", "diploma"],
-		"program_durations": ["3 years", "4 years"],
+		"certifications": ["diploma"],
+		"program_durations": ["3 years"],
 		"geocoded_location": {
 			"x": 45.346822,
 			"y": -75.76027039999997
@@ -19,9 +19,9 @@
 		"address": "1400 Barrydowne Road",
 		"city": "Sudbury ON P1B 8K9",
 		"url": "www.cambrianc.on.ca",
-		"disciplines": ["graphic design"],
-		"certifications": ["degree", "diploma"],
-		"program_durations": ["3 years", "4 years"],
+		"disciplines": ["graphic design", "fashion design", "landscape architecture"],
+		"certifications": ["diploma"],
+		"program_durations": ["3 years"],
 		"geocoded_location": {
 			"x": 46.5297829,
 			"y": -80.94112989999996
@@ -34,8 +34,8 @@
 		"city": "North Bay ON P1B 8K9",
 		"url": "www.canadorec.on.ca",
 		"disciplines": ["graphic design"],
-		"certifications": ["degree", "diploma"],
-		"program_durations": ["3 years", "4 years"],
+		"certifications": ["diploma"],
+		"program_durations": ["3 years"],
 		"geocoded_location": {
 			"x": 46.311158,
 			"y": -79.46182599999997
@@ -47,9 +47,9 @@
 		"address": "951 Carlaw Avenue",
 		"city": "Toronto, ON M4K 3M2",
 		"url": "www.centennialcollege.ca/future/ccc_gdm_index.jsp",
-		"disciplines": ["graphic design"],
-		"certifications": ["degree", "diploma"],
-		"program_durations": ["3 years", "4 years"],
+		"disciplines": ["graphic design", "fashion design"],
+		"certifications": ["diploma"],
+		"program_durations": ["3 years"],
 		"geocoded_location": {
 			"x": 43.6843602,
 			"y": -79.3495168
@@ -63,7 +63,7 @@
 		"url": "www.conestogac.on.ca",
 		"disciplines": ["graphic design"],
 		"certifications": ["degree", "diploma"],
-		"program_durations": ["3 years", "4 years"],
+		"program_durations": ["3 years"],
 		"geocoded_location": {
 			"x": 43.3917904,
 			"y": -80.40766710000003
@@ -76,8 +76,8 @@
 		"city": "Oshawa ON L1H 7L7",
 		"url": "www.durhamcollege.ca",
 		"disciplines": ["graphic design"],
-		"certifications": ["degree", "diploma"],
-		"program_durations": ["3 years", "4 years"],
+		"certifications": ["diploma"],
+		"program_durations": ["3 years"],
 		"geocoded_location": {
 			"x": 43.9151625,
 			"y": -78.87117209999997
@@ -89,9 +89,9 @@
 		"address": "1460 Oxford Street East",
 		"city": "London ON N5Y 5R6",
 		"url": "www.fanshawec.on.ca",
-		"disciplines": ["graphic design"],
-		"certifications": ["degree", "diploma"],
-		"program_durations": ["3 years", "4 years"],
+		"disciplines": ["graphic design", "architecture", "fashion design"],
+		"certifications": ["diploma"],
+		"program_durations": ["3 years"],
 		"geocoded_location": {
 			"x": 43.0112762,
 			"y": -81.19903640000001
@@ -103,9 +103,9 @@
 		"address": "200 King Street East St. James Campus",
 		"city": "Toronto ON M5A 3W8",
 		"url": "www.gbrownc.on.ca",
-		"disciplines": ["graphic design"],
-		"certifications": ["degree", "diploma"],
-		"program_durations": ["3 years", "4 years"],
+		"disciplines": ["graphic design", "fashion design", "interior design"],
+		"certifications": ["diploma"],
+		"program_durations": ["3 years"],
 		"geocoded_location": {
 			"x": 43.6509109,
 			"y": -79.37021749999997
@@ -131,9 +131,9 @@
 		"address": "Media Studies & Information Technology 3199 Lake Shore Blvd W, F102",
 		"city": "Toronto, ON M8V 1K8",
 		"url": "www.humber.ca",
-		"disciplines": ["graphic design"],
-		"certifications": ["degree", "diploma"],
-		"program_durations": ["3 years", "4 years"],
+		"disciplines": ["graphic design", "industrial design", "interior design"],
+		"certifications": ["diploma"],
+		"program_durations": ["3 years"],
 		"geocoded_location": {
 			"x": 43.5964458,
 			"y": -79.520648
@@ -173,7 +173,7 @@
 		"address": "100 McCaul Street",
 		"city": "Toronto ON M5T 1W1",
 		"url": "www.ocad.on.ca",
-		"disciplines": ["graphic design"],
+		"disciplines": ["graphic design", "architecture", "interior", "landscape architecture", "fashion design"],
 		"certifications": ["degree", "diploma"],
 		"program_durations": ["3 years", "4 years"],
 		"geocoded_location": {
@@ -189,7 +189,7 @@
 		"url": "www.stclairc.on.ca",
 		"disciplines": ["graphic design"],
 		"certifications": ["degree", "diploma"],
-		"program_durations": ["3 years", "4 years"],
+		"program_durations": ["3 years"],
 		"geocoded_location": {
 			"x": 42.2471644,
 			"y": -83.0187434
@@ -201,9 +201,9 @@
 		"address": "King & Portsmouth",
 		"city": "Kingston ON K7L 5A6",
 		"url": "www.sl.on.ca",
-		"disciplines": ["graphic design"],
+		"disciplines": ["graphic design", "interior design", "landscape architecture"],
 		"certifications": ["degree", "diploma"],
-		"program_durations": ["3 years", "4 years"],
+		"program_durations": ["3 years"],
 		"geocoded_location": {
 			"x": 44.2205024,
 			"y": -76.52508510000001
@@ -243,7 +243,7 @@
 		"address": "1430 Trafalgar Road",
 		"city": "Oakville ON L6H 2L1",
 		"url": "www.sheridanc.on.ca",
-		"disciplines": ["graphic design"],
+		"disciplines": ["graphic design", "interior design", "landscape architecture", "architecture", "industrial design"],
 		"certifications": ["degree", "diploma"],
 		"program_durations": ["3 years", "4 years"],
 		"geocoded_location": {
@@ -257,9 +257,9 @@
 		"address": "4700 Keele Street",
 		"city": "Toronto ON M3J 1P3",
 		"url": "www.design.yorku.ca",
-		"disciplines": ["graphic design"],
-		"certifications": ["degree", "diploma"],
-		"program_durations": ["3 years", "4 years"],
+		"disciplines": ["graphic design", "interior design", "landscape architecture", "architecture", "industrial design"],
+		"certifications": ["degree"],
+		"program_durations": ["4 years"],
 		"geocoded_location": {
 			"x": 43.7734116,
 			"y": -79.4931641

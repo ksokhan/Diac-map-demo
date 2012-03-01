@@ -5,7 +5,8 @@ var SchoolBrowser = new Class ({
 	'Implements': [Options, Events],
 
 	'options': {
-		'view_mode': 'list'
+		'view_mode': 'map',
+		'map_zoom_level': 6
 	},
 
 	'criteria': {
@@ -76,6 +77,59 @@ var SchoolBrowser = new Class ({
 		_self.fields.program_durations = $('program_durations');
 		_self.fields.location_radius   = $('location_radius');
 		_self.fields.location_city     = $('location_city');
+
+		/*--------------------------------------------------------------------------
+		Pre-Load EJS Templates
+		--------------------------------------------------------------------------*/
+		_self.templates = {
+			'map_info_bubble': new EJS({ 'url': '/templates/map_info_bubble.ejs' }),
+			'list_view_item': new EJS({ 'url': '/templates/list_view_item.ejs' })
+		};
+
+		/*--------------------------------------------------------------------------
+		Set up the map
+		--------------------------------------------------------------------------*/
+		_self.google_map = new google.maps.Map ($('map_canvas'), {
+			'center': new google.maps.LatLng(-34.397, 150.644),
+			'zoom': _self.options.map_zoom_level,
+			'mapTypeId': google.maps.MapTypeId.ROADMAP,
+			'mapTypeControl': false,
+			'streetViewControl': false,
+			'styles': [{'featureType': 'water', 'stylers': [{ 'hue': '#0077ff' }, { 'saturation': -37 }, { 'lightness': 13 } ] }, {'featureType': 'administrative', 'elementType': 'geometry', 'stylers': [{ 'lightness': 49 }, { 'visibility': 'simplified' } ] }, {'featureType': 'poi', 'stylers': [{ 'visibility': 'off' } ] }, {'featureType': 'road', 'stylers': [{ 'visibility': 'off' } ] } ],
+			'zoomControlOptions': {
+				 'position': google.maps.ControlPosition.LEFT_BOTTOM
+			}
+		});
+
+		// Create an info window(we'll only allow one to be shown at once)
+		_self.google_map.info_window = new google.maps.InfoWindow({
+			'content': '',
+			'minHeight': 200,
+		});
+
+		// Center the map on Ontario
+		_self.google_map.geocoder = new google.maps.Geocoder();
+		_self.google_map.geocoder.geocode({ 'address': 'Toronto, Ontario, Canada' }, function (results, status) {
+			_self.google_map.setCenter (results[0].geometry.location);
+		});
+
+		// Plot the markers for *all* schools
+		_self.schools.each (function (school, index) {
+			school.marker = new google.maps.Marker ({
+				'map': _self.google_map,
+				'position': new google.maps.LatLng (school.geocoded_location.x, school.geocoded_location.y),
+				'title': school.name
+			});
+
+			// Rig it for the info window
+			google.maps.event.addListener (school.marker, 'click', function () {
+				// Set the contents of the window to the description of the point
+				_self.google_map.info_window.setContent(_self.templates.map_info_bubble.render (school));
+
+				// Show the window!
+				_self.google_map.info_window.open(_self.google_map, school.marker);
+			});
+		});
 	},
 
 	/*--------------------------------------------------------------------------
@@ -90,8 +144,17 @@ var SchoolBrowser = new Class ({
 		// Search
 		var results = _self.searchSchools ();
 
-		// Print results to the list view
-		$$('#list_view #results').set ('html', new EJS({ 'url': '/templates/list_view.ejs' }).render ({ 'schools': results }));
+		/*--------------------------------------------------------------------------
+		List View
+		--------------------------------------------------------------------------*/
+		$$('#list_view #results').set ('html', _self.templates.list_view_item.render ({ 'schools': results }));
+
+		/*--------------------------------------------------------------------------
+		Map View
+		--------------------------------------------------------------------------*/
+		_self.schools.each (function (school, index) {
+		    school.marker.setMap (results.contains (school) ? _self.google_map : null);
+		});
 	},
 
 	/*--------------------------------------------------------------------------
