@@ -3767,18 +3767,20 @@ header nav li a:hover {
 #sidebar .box {
   margin-bottom: 20px;
 }
+#sidebar .box * {
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.1s;
+  -o-transition-property: all;
+  -o-transition-duration: 0.1s;
+}
 #sidebar .box ul {
   list-style: none;
 }
 #sidebar .box ul li input[type=checkbox] {
   margin-top: -4px;
-  transition-property: opacity;
-  transition-duration: 0.1s;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-property: opacity;
-  -webkit-transition-duration: 0.1s;
-  -o-transition-property: opacity;
-  -o-transition-duration: 0.1s;
 }
 #sidebar .box.inactive {
   opacity: 0.4;
@@ -3786,11 +3788,17 @@ header nav li a:hover {
 #sidebar .box.inactive input[type=checkbox] {
   opacity: 0;
 }
+#sidebar .box.inactive ul {
+  margin-left: 10px;
+}
 #sidebar .box.inactive:hover {
   opacity: 0.8;
 }
 #sidebar .box.inactive:hover input[type=checkbox] {
   opacity: 1;
+}
+#sidebar .box.inactive:hover ul {
+  margin-left: 26px;
 }
 /*--------------------------------------------------------------------------
 	View Modes

@@ -68,9 +68,9 @@
 				    border-bottom: solid 1px lighten(@bl, 55%);
 
 				    &:hover {
-					text-decoration: none;
-					border-bottom-color: lighten(@bl, 20%);
-					color: @bl - #111;
+						text-decoration: none;
+						border-bottom-color: lighten(@bl, 20%);
+						color: @bl - #111;
 				    }
 				}
 			}
@@ -149,13 +149,15 @@
 		}
 		.box {
 		    margin-bottom: 20px;
+		    * {
+		    	.transitions (all, 0.1s, ease-in-out);
+		    }
 		    ul {
 				list-style: none;
 
 				li {
 				    input[type=checkbox] {
 				    	margin-top: -4px;
-				    	.transitions (opacity, 0.1s, ease-in-out)
 				    }
 				}
 		    }
@@ -164,11 +166,16 @@
 		    	input[type=checkbox] {
 		    		opacity: 0;
 		    	}
-
+		    	ul {
+		    		margin-left: 10px;
+		    	}
 		    	&:hover {
 		    		opacity: 0.8;
 		    		input[type=checkbox] {
 		    			opacity: 1;
+		    		}
+		    		ul {
+		    			margin-left: 26px;
 		    		}
 		    	}
 		    }
