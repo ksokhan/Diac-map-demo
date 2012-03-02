@@ -155,10 +155,10 @@ var SchoolBrowser = new Class ({
 		});
 
 		// Update the sidebar boxes
-		$$('#disciplines, #certifications, #program_durations').setStyle ('opacity', 0.3);
-		$$('#disciplines input:checked, #certifications input:checked, #program_durations input:checked').each (function (element, index) {
-			element.getParent ('#disciplines, #certifications, #program_durations').setStyle ('opacity', 1);
-		});
+		$$('#disciplines ! .box, #certifications ! .box, #program_durations ! .box').addClass('inactive');
+		$$('input:checked ! .box').removeClass ('inactive');
+		$$('.handle').removeClass ('showing_all');
+		$$('.inactive.box !+ .handle').addClass ('showing_all');
 	},
 
 	/*--------------------------------------------------------------------------

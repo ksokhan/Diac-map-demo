@@ -3756,6 +3756,13 @@ header nav li a:hover {
   text-indent: 25px;
   color: #d60404;
   font-weight: 600;
+  position: relative;
+}
+#sidebar .handle.showing_all:after {
+  content: "(Showing All)";
+  position: absolute;
+  right: 0;
+  color: #ddd;
 }
 #sidebar .box {
   margin-bottom: 20px;
@@ -3765,6 +3772,12 @@ header nav li a:hover {
 }
 #sidebar .box ul li input[type=checkbox] {
   margin-top: -4px;
+}
+#sidebar .box.inactive {
+  opacity: 0.4;
+}
+#sidebar .box.inactive:hover {
+  opacity: 0.8;
 }
 /*--------------------------------------------------------------------------
 	View Modes
