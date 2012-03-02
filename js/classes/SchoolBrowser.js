@@ -26,7 +26,7 @@ var SchoolBrowser = new Class ({
 
 		// Load the school data, then start doing shit
 		new Request.JSON ({
-			'url': 'data/schools.js',
+			'url': 'data/schools.json',
 			'onSuccess': function (schools) {
 				// Save them
 				_self.schools = schools;
