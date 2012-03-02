@@ -6,22 +6,22 @@
 		<title>Diac Map</title>
 
 		<!--HTML5 RESET-->
-		<link rel="stylesheet" type="text/css" href="/css/html5reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/html5reset.css" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic' rel='stylesheet' type='text/css'>
 
 		<!-- Styles -->
-		<link rel="stylesheet" type="text/css" href="/css/_global.css" />
+		<link rel="stylesheet" type="text/css" href="css/_global.css" />
 
 		<!--MooTools Core-->
-		<script type="text/javascript" src="/libraries/mootools/moo.core.1.4.5.dev.js"></script>
-		<script type="text/javascript" src="/libraries/mootools/moo.more.1.4.0.1.js"></script>
+		<script type="text/javascript" src="libraries/mootools/moo.core.1.4.5.dev.js"></script>
+		<script type="text/javascript" src="libraries/mootools/moo.more.1.4.0.1.js"></script>
 
 		<!-- EJS -->
-		<script type="text/javascript" src="/libraries/ejs/ejs.js"></script>
+		<script type="text/javascript" src="libraries/ejs/ejs.js"></script>
 
 		<!-- Scripts -->
-		<script type="text/javascript" src="/js/classes/SchoolBrowser.js"></script>
-		<script type="text/javascript" src="/js/_global.js"></script>
+		<script type="text/javascript" src="js/classes/SchoolBrowser.js"></script>
+		<script type="text/javascript" src="js/_global.js"></script>
 
 		<!-- Google Map API -->
 		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHXocBCL0RRUGklPm1A6_X_pwy2yJ1NL8&sensor=false"></script>
