@@ -3,8 +3,4 @@ Slick.definePseudo ('has', function (value) {
 });
 window.addEvent ('domready', function () {
 	var app = new SchoolBrowser ();
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> aarons_method
