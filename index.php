@@ -3,10 +3,11 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>Diac Map</title>
 
 		<!--HTML5 RESET-->
 		<link rel="stylesheet" type="text/css" href="/css/html5reset.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic' rel='stylesheet' type='text/css'>
 
 		<!-- Styles -->
 		<link rel="stylesheet" type="text/css" href="/css/_global.css" />
@@ -51,10 +52,10 @@
 		</header>
 		<section id="content_container">
 			<nav id="bread_crumbs">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Get a Design Education</a></li>
-					<li><a href="#">School Browser</a></li>
+				<ul class="breadcrumb">
+					<li><a href="#">Home</a> <span class="divider">/</span></li>
+					<li><a href="#">Get a Design Education</a> <span class="divider">/</span></li>
+					<li class="active"><a href="#">School Browser</a></li>
 				</ul>
 			</nav>
 
@@ -76,15 +77,15 @@
 
 				<!-- The filter panel / sidebar -->
 				<div id="sidebar">
+				<form class="form-horizontal" action="#">
 					<div class="handle">View Mode</div>
-					<div class="container">
+					<div class="box">
 						<ul id="view_mode_triggers">
 							<li id="list_view_mode_trigger" data-exec="setViewMode" data-exec-options="{ 'view_mode': 'list' }"><a href="#">List View</a></li>
 							<li id="map_view_mode_trigger" data-exec="setViewMode" data-exec-options="{ 'view_mode': 'map' }"><a href="#">Map View</a></li>
 						</ul>
-					</div>
-					<div class="handle">Design Discipline</div>
-					<div class="container">
+					</div> <div class="handle">Design Discipline</div>
+					<div class="box">
 						<ul id="disciplines">
 							<li><label><input type="checkbox" data-exec="updateView" value="architecture"> Architecture</label></li>
 							<li><label><input type="checkbox" data-exec="updateView" value="fashion design"> Fashion Design</label></li>
@@ -95,7 +96,7 @@
 						</ul>
 					</div>
 					<div class="handle">Certification</div>
-					<div class="container">
+					<div class="box">
 						<ul id="certifications">
 							<li><label><input type="checkbox" data-exec="updateView" value="degree"> Degree</label></li>
 							<li><label><input type="checkbox" data-exec="updateView" value="diploma"> Diploma</label></li>
@@ -104,7 +105,7 @@
 						</ul>
 					</div>
 					<div class="handle">Program Duration</div>
-					<div class="container">
+					<div class="box">
 						<ul id="program_durations">
 							<li><label><input type="checkbox" data-exec="updateView" value="1 year"> 1 year</label></li>
 							<li><label><input type="checkbox" data-exec="updateView" value="2 years"> 2 years</label></li>
@@ -113,18 +114,22 @@
 						</ul>
 					</div>
 					<div class="handle">Location</div>
-					<div class="container">
-						<input id="location_radius" type="text" data-exec="updateView" data-on-event="change">km
-						from
-						<select id="location_city" data-exec="updateView" data-on-event="change">
-							<option>Anywhere</option>
-							<option value="kingston">Kingston</option>
-							<option value="ottawa">Ottawa</option>
-							<option value="sudbury">Sudbury</option>
-							<option value="toronto">Toronto</option>
-							<option value="waterloo">Waterloo</option>
-						</select>
-					</div>
+					<div class="box">
+						<ul>
+							<li>
+							    <input id="location_radius" class="span1" type="text" data-exec="updateView" data-on-event="change">
+							    km from
+							    <select id="location_city" class="span1" data-exec="updateView" data-on-event="change">
+								    <option>Anywhere</option>
+								    <option value="kingston">Kingston</option>
+								    <option value="ottawa">Ottawa</option>
+								    <option value="sudbury">Sudbury</option>
+								    <option value="toronto">Toronto</option>
+								    <option value="waterloo">Waterloo</option>
+							    </select>
+							</li>
+						</ul>
+				</form>
 				</div>
 			</div>
 		</section>

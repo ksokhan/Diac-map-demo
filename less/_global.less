@@ -1,5 +1,6 @@
 
 	@import '_mixins.less';
+	@import 'bootstrap/bootstrap.less';
 
 	/*--------------------------------------------------------------------------
 	Config
@@ -9,16 +10,25 @@
 	@sidebar_width: 250px;
 	@results_width: @site_width - @sidebar_width;
 
+	// colours
+	@bl: #006CC4;
+	@rd: #D60404;
+
+
 	/*--------------------------------------------------------------------------
 	Typography
 	--------------------------------------------------------------------------*/
+
+	html {
+	    font-size: 0.8em;
+	}
 
 	/*--------------------------------------------------------------------------
 	Body
 	--------------------------------------------------------------------------*/
 	body {
 		width: @site_width;
-		margin: 0 auto;
+		margin: 0 auto 40px;
 	}
 	header {
 		position: relative;
@@ -30,6 +40,10 @@
 			line-height: 50px;
 			font-size: 30px;
 			margin-top: -25px;
+			a {
+			    text-decoration: none;
+			    color: @bl;
+			}
 		}
 
 		nav {
@@ -43,6 +57,22 @@
 			li {
 				display: inline;
 				margin-left: 20px;
+				font-weight: 600;
+				//text-transform: uppercase;
+				font-size: 0.95em;
+
+
+				a {
+				    text-decoration: none;
+				    color: @bl;
+				    border-bottom: solid 1px lighten(@bl, 55%);
+
+				    &:hover {
+					text-decoration: none;
+					border-bottom-color: lighten(@bl, 20%);
+					color: @bl - #111;
+				    }
+				}
 			}
 		}
 	}
@@ -55,15 +85,6 @@
 		#bread_crumbs {
 			li {
 				display: inline;
-
-				&:not(:last-child):after {
-					content: '>';
-					margin-left: 5px;
-				}
-				&:last-child a {
-					color: black;
-					text-decoration: none;
-				}
 			}
 		}
 	}
@@ -83,6 +104,7 @@
 		bottom: 0;
 		left: 0;
 		width: @results_width;
+		.box-shadow(inset 0 0 1px #333);
 
 		.view {
 			position: absolute;
@@ -106,17 +128,29 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		bottom: 0;
 		left: @results_width;
 		width: @sidebar_width;
 		overflow-y: auto;
 
 		.handle {
-			background: #eee;
 			line-height: 20px;
-			margin-top: 10px;
 			margin-bottom: 5px;
+			text-indent: 25px;
+			color: @rd;
+			font-weight: 600;
 		}
+		.box {
+		    margin-bottom: 20px;
+		    ul {
+			list-style: none;
+
+			li {
+			    input[type=checkbox] { margin-top: -4px; }
+			}
+		    }
+		}
+
+
 	}
 
 	/*--------------------------------------------------------------------------
