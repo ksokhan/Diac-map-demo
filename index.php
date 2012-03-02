@@ -87,30 +87,30 @@
 					</div> <div class="handle">Design Discipline</div>
 					<div class="box">
 						<ul id="disciplines">
-							<li><label><input checked="true" type="checkbox" data-exec="updateView" value="architecture"> Architecture</label></li>
-							<li><label><input checked="true" type="checkbox" data-exec="updateView" value="fashion design"> Fashion Design</label></li>
-							<li><label><input checked="true" type="checkbox" data-exec="updateView" value="graphic design"> Graphic Design</label></li>
-							<li><label><input checked="true" type="checkbox" data-exec="updateView" value="industrial design"> Industrial Design</label></li>
-							<li><label><input checked="true" type="checkbox" data-exec="updateView" value="interior design"> Interior Design</label></li>
-							<li><label><input checked="true" type="checkbox" data-exec="updateView" value="landscape architecture"> Landscape Architecture</label></li>
+							<li><label><input type="checkbox" data-exec="updateView" value="architecture"> Architecture</label></li>
+							<li><label><input type="checkbox" data-exec="updateView" value="fashion design"> Fashion Design</label></li>
+							<li><label><input type="checkbox" data-exec="updateView" value="graphic design"> Graphic Design</label></li>
+							<li><label><input type="checkbox" data-exec="updateView" value="industrial design"> Industrial Design</label></li>
+							<li><label><input type="checkbox" data-exec="updateView" value="interior design"> Interior Design</label></li>
+							<li><label><input type="checkbox" data-exec="updateView" value="landscape architecture"> Landscape Architecture</label></li>
 						</ul>
 					</div>
 					<div class="handle">Certification</div>
 					<div class="box">
 						<ul id="certifications">
-							<li><label><input  checked="true" type="checkbox" data-exec="updateView" value="degree"> Degree</label></li>
-							<li><label><input  checked="true" type="checkbox" data-exec="updateView" value="diploma"> Diploma</label></li>
-							<li><label><input checked="true" type="checkbox" data-exec="updateView" value="honours degree"> Honours Degree</label></li>
-							<li><label><input checked="true" type="checkbox" data-exec="updateView" value="a pat on the back"> A Pat on the Back</label></li>
+							<li><label><input type="checkbox" data-exec="updateView" value="degree"> Degree</label></li>
+							<li><label><input type="checkbox" data-exec="updateView" value="diploma"> Diploma</label></li>
+							<li><label><input type="checkbox" data-exec="updateView" value="honours degree"> Honours Degree</label></li>
+							<li><label><input type="checkbox" data-exec="updateView" value="a pat on the back"> A Pat on the Back</label></li>
 						</ul>
 					</div>
 					<div class="handle">Program Duration</div>
 					<div class="box">
 						<ul id="program_durations">
-							<li><label><input checked="true" type="checkbox" data-exec="updateView" value="1 year"> 1 year</label></li>
-							<li><label><input checked="true" type="checkbox" data-exec="updateView" value="2 years"> 2 years</label></li>
-							<li><label><input checked="true" type="checkbox" data-exec="updateView" value="3 years"> 3 years</label></li>
-							<li><label><input checked="true" type="checkbox" data-exec="updateView" value="4 years"> 4 years</label></li>
+							<li><label><input type="checkbox" data-exec="updateView" value="1 year"> 1 year</label></li>
+							<li><label><input type="checkbox" data-exec="updateView" value="2 years"> 2 years</label></li>
+							<li><label><input type="checkbox" data-exec="updateView" value="3 years"> 3 years</label></li>
+							<li><label><input type="checkbox" data-exec="updateView" value="4 years"> 4 years</label></li>
 						</ul>
 					</div>
 					<div class="handle">Location</div>

@@ -151,7 +151,13 @@ var SchoolBrowser = new Class ({
 		Map View
 		--------------------------------------------------------------------------*/
 		_self.schools.each (function (school, index) {
-		    school.marker.setMap (results.contains (school) ? _self.google_map : null);
+			school.marker.setMap (results.contains (school) ? _self.google_map : null);
+		});
+
+		// Update the sidebar boxes
+		$$('#disciplines, #certifications, #program_durations').setStyle ('opacity', 0.3);
+		$$('#disciplines input:checked, #certifications input:checked, #program_durations input:checked').each (function (element, index) {
+			element.getParent ('#disciplines, #certifications, #program_durations').setStyle ('opacity', 1);
 		});
 	},
 
@@ -195,17 +201,17 @@ var SchoolBrowser = new Class ({
 		_self.schools.each (function (school, index) {
 			// Disciplines
 			var matches_disciplines = school.disciplines.some (function (item, index) {
-				return _self.criteria.disciplines.contains (item);
+				return _self.criteria.disciplines.length == 0 || _self.criteria.disciplines.contains (item);
 			});
 
 			// Certifications
 			var matches_certifications = school.certifications.some (function (item, index) {
-				return _self.criteria.certifications.contains (item);
+				return _self.criteria.certifications.length == 0 ||  _self.criteria.certifications.contains (item);
 			});
 
 			// Program Durations
 			var matches_program_durations = school.program_durations.some (function (item, index) {
-				return _self.criteria.program_durations.contains (item);
+				return _self.criteria.program_durations.length == 0 || _self.criteria.program_durations.contains (item);
 			});
 
 			// Locations
