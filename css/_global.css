@@ -3772,12 +3772,25 @@ header nav li a:hover {
 }
 #sidebar .box ul li input[type=checkbox] {
   margin-top: -4px;
+  transition-property: opacity;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 0.1s;
+  -o-transition-property: opacity;
+  -o-transition-duration: 0.1s;
 }
 #sidebar .box.inactive {
   opacity: 0.4;
 }
+#sidebar .box.inactive input[type=checkbox] {
+  opacity: 0;
+}
 #sidebar .box.inactive:hover {
   opacity: 0.8;
+}
+#sidebar .box.inactive:hover input[type=checkbox] {
+  opacity: 1;
 }
 /*--------------------------------------------------------------------------
 	View Modes

@@ -153,14 +153,23 @@
 				list-style: none;
 
 				li {
-				    input[type=checkbox] { margin-top: -4px; }
+				    input[type=checkbox] {
+				    	margin-top: -4px;
+				    	.transitions (opacity, 0.1s, ease-in-out)
+				    }
 				}
 		    }
 		    &.inactive {
 		    	opacity: 0.4;
+		    	input[type=checkbox] {
+		    		opacity: 0;
+		    	}
 
 		    	&:hover {
 		    		opacity: 0.8;
+		    		input[type=checkbox] {
+		    			opacity: 1;
+		    		}
 		    	}
 		    }
 		}
