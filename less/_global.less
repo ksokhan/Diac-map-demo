@@ -158,6 +158,16 @@
 				li {
 				    input[type=checkbox] {
 				    	margin-top: -4px;
+				    	&:not(:checked) {
+				    		opacity: 0;
+				    	}
+				    }
+				}
+				&:hover {
+					input[type=checkbox] {
+				    	&:not(:checked) {
+				    		opacity: 1;
+				    	}
 				    }
 				}
 		    }
@@ -166,16 +176,11 @@
 		    	input[type=checkbox] {
 		    		opacity: 0;
 		    	}
-		    	ul {
-		    		margin-left: 10px;
-		    	}
+
 		    	&:hover {
 		    		opacity: 0.8;
 		    		input[type=checkbox] {
 		    			opacity: 1;
-		    		}
-		    		ul {
-		    			margin-left: 26px;
 		    		}
 		    	}
 		    }

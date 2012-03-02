@@ -3782,23 +3782,23 @@ header nav li a:hover {
 #sidebar .box ul li input[type=checkbox] {
   margin-top: -4px;
 }
+#sidebar .box ul li input[type=checkbox]:not(:checked) {
+  opacity: 0;
+}
+#sidebar .box ul:hover input[type=checkbox]:not(:checked) {
+  opacity: 1;
+}
 #sidebar .box.inactive {
   opacity: 0.4;
 }
 #sidebar .box.inactive input[type=checkbox] {
   opacity: 0;
 }
-#sidebar .box.inactive ul {
-  margin-left: 10px;
-}
 #sidebar .box.inactive:hover {
   opacity: 0.8;
 }
 #sidebar .box.inactive:hover input[type=checkbox] {
   opacity: 1;
-}
-#sidebar .box.inactive:hover ul {
-  margin-left: 26px;
 }
 /*--------------------------------------------------------------------------
 	View Modes

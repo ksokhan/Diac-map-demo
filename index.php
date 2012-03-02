@@ -6,7 +6,7 @@
 		<title>Diac Map</title>
 
 		<!--HTML5 RESET-->
-		<link rel="stylesheet" type="text/css" href="css/html5reset.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/html5reset.css" /> -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic' rel='stylesheet' type='text/css'>
 
 		<!-- Styles -->
@@ -22,9 +22,6 @@
 		<!-- Scripts -->
 		<script type="text/javascript" src="js/classes/SchoolBrowser.js"></script>
 		<script type="text/javascript" src="js/_global.js"></script>
-
-		<!-- Google Map API -->
-		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHXocBCL0RRUGklPm1A6_X_pwy2yJ1NL8&sensor=false"></script>
 
 		<!-- Custom Script -->
 		<script type="text/javascript">
@@ -133,6 +130,9 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- Google Map API -->
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHXocBCL0RRUGklPm1A6_X_pwy2yJ1NL8&sensor=false"></script>
 	</body>
 
 </html>
