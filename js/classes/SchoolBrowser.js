@@ -82,8 +82,8 @@ var SchoolBrowser = new Class ({
 		Pre-Load EJS Templates
 		--------------------------------------------------------------------------*/
 		_self.templates = {
-			'map_info_bubble': new EJS({ 'url': '../../templates/map_info_bubble.ejs' }),
-			'list_view_item': new EJS({ 'url': '../../templates/list_view_item.ejs' })
+			'map_info_bubble': new EJS({ 'url': 'templates/map_info_bubble.ejs' }),
+			'list_view_item': new EJS({ 'url': 'templates/list_view_item.ejs' })
 		};
 
 		/*--------------------------------------------------------------------------
