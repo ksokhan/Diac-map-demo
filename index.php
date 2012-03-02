@@ -64,15 +64,16 @@
 			<div id="app">
 				<!-- This is where the map or list views are shown -->
 				<div id="results_area">
-					<div class="view" id="map_view">
-						<div id="map_canvas"></div>
-					</div>
 					<div class="view" id="list_view">
 						LIST VIEW
 						<div id="results">
 							<!-- Results get added here by the JS -->
 						</div>
 					</div>
+					<div class="view" id="map_view">
+						<div id="map_canvas"></div>
+					</div>
+
 				</div>
 
 				<!-- The filter panel / sidebar -->
@@ -81,8 +82,8 @@
 					<div class="handle">View Mode</div>
 					<div class="box">
 						<ul id="view_mode_triggers">
-							<li id="list_view_mode_trigger" data-exec="setViewMode" data-exec-options="{ 'view_mode': 'list' }"><a href="#">List View</a></li>
-							<li id="map_view_mode_trigger" data-exec="setViewMode" data-exec-options="{ 'view_mode': 'map' }"><a href="#">Map View</a></li>
+							<li id="list_view_mode_trigger" data-exec="setViewMode" data-exec-options="{ 'view_mode': 'list' }"><label class="radio"><input name="mapView" type="radio" />List View</a></li>
+							<li id="map_view_mode_trigger" data-exec="setViewMode" data-exec-options="{ 'view_mode': 'map' }"><label class="radio"><input name="mapView" type="radio" checked="true" />Map View</a></li>
 						</ul>
 					</div> <div class="handle">Design Discipline</div>
 					<div class="box">
