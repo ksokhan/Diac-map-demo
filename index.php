@@ -79,8 +79,8 @@
 					<div class="handle">View Mode</div>
 					<div class="box">
 						<ul id="view_mode_triggers">
-							<li id="list_view_mode_trigger" data-exec="setViewMode" data-exec-options="{ 'view_mode': 'list' }"><label class="radio"><input name="mapView" type="radio" />List View</a></li>
-							<li id="map_view_mode_trigger" data-exec="setViewMode" data-exec-options="{ 'view_mode': 'map' }"><label class="radio"><input name="mapView" type="radio" checked="true" />Map View</a></li>
+							<li id="list_view_mode_trigger" data-exec="setViewMode" data-exec-options="{ 'view_mode': 'list' }"><label class="radio"><input name="mapView" type="radio" />List View</label></li>
+							<li id="map_view_mode_trigger" data-exec="setViewMode" data-exec-options="{ 'view_mode': 'map' }"><label class="radio"><input name="mapView" type="radio" checked="true" />Map View</label></li>
 						</ul>
 					</div> <div class="handle">Design Discipline</div>
 					<div class="box">
