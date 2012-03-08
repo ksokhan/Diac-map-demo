@@ -3814,51 +3814,45 @@ header nav li a:hover {
 	--------------------------------------------------------------------------*/
 .school {
   position: relative;
-  width: 300px;
 }
 .school .related_disciplines {
+  font-size: 0;
+  line-height: 0 !important;
+  margin: 0 !important;
+  list-style-type: none;
   width: 100%;
   position: absolute;
   top: 0;
-  display: table;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.school .related_disciplines ul {
-  display: table-row;
-  margin: 0 !important;
-}
-.school .related_disciplines ul:hover li {
-  width: none;
-  height: 20px;
-}
-.school .related_disciplines li, .school .related_disciplines li span {
-  transition-property: width, height, opacity, font-size;
-  transition-duration: 0.3s;
+.school .related_disciplines * {
+  transition-property: opacity;
+  transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
-  -webkit-transition-property: width, height, opacity, font-size;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-property: width, height, opacity, font-size;
-  -o-transition-duration: 0.3s;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-property: opacity;
+  -o-transition-duration: 0.5s;
+}
+.school .related_disciplines:hover li {
+  line-height: 18px !important;
+}
+.school .related_disciplines:hover li:hover span {
+  opacity: 1;
+  font-size: 12px;
+  line-height: 25px !important;
 }
 .school .related_disciplines li {
-  display: table-cell;
+  vertical-align: top;
+  overflow: hidden;
+  line-height: 0 !important;
 }
-.school .related_disciplines li.of_1 {
-  width: 100%;
-}
-.school .related_disciplines li.of_2 {
-  width: 50%;
-}
-.school .related_disciplines li.of_3 {
-  width: 33.333333333333336%;
-}
-.school .related_disciplines li.of_4 {
-  width: 25%;
-}
-.school .related_disciplines li.of_5 {
-  width: 20%;
-}
-.school .related_disciplines li.of_6 {
-  width: 16.666666666666668%;
+.school .related_disciplines li span {
+  opacity: 0;
+  padding: 0 10px;
+  font-size: 5px;
+  line-height: 5px;
 }
 .school .related_disciplines li.architecture {
   background-color: #ff0000;
@@ -3877,24 +3871,4 @@ header nav li a:hover {
 }
 .school .related_disciplines li.landscape_architecture {
   background-color: #800080;
-}
-.school .related_disciplines li span {
-  padding: 0 10px;
-  display: block;
-  color: white;
-  line-height: 5px;
-  font-size: 0;
-  opacity: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  font-weight: bold;
-  text-shadow: black 0.1em 0.1em 0.2em;
-}
-.school .related_disciplines li:hover {
-  width: 60% !important;
-}
-.school .related_disciplines li:hover span {
-  line-height: 20px;
-  opacity: 1;
-  font-size: 12px;
 }

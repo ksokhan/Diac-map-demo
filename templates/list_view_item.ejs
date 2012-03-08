@@ -5,12 +5,10 @@
 	<p class="description"><%= schools[i].description %></p>
 
 	<a href="#">More Info &gt;</a>
-	<div class="related_disciplines">
-		<ul>
-			<% for (var j = 0; j < schools[i].disciplines.length; j++) { %>
-				<li class="<%= toClassName (schools[i].disciplines[j]) %> of_<%= schools[i].disciplines.length %>"><span><%= schools[i].disciplines[j] %></span></li>
-			<% } %>
-		</ul>
-	</div>
+	<ul class="related_disciplines">
+		<% for (var j = 0; j < schools[i].disciplines.length; j++) { %>
+			<li class="<%= toClassName (schools[i].disciplines[j]) %> of_<%= schools[i].disciplines.length %>"><span><%= schools[i].disciplines[j] %></span></li>
+		<% } %>
+	</ul>
 </div>
 <% } %>

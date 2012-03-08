@@ -20,6 +20,7 @@
 		<script type="text/javascript" src="libraries/ejs/ejs.js"></script>
 
 		<!-- Scripts -->
+		<script type="text/javascript" src="js/classes/DisciplineAccordion.js"></script>
 		<script type="text/javascript" src="js/classes/SchoolBrowser.js"></script>
 		<script type="text/javascript" src="js/_global.js"></script>
 

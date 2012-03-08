@@ -147,6 +147,9 @@ var SchoolBrowser = new Class ({
 		--------------------------------------------------------------------------*/
 		$$('#list_view #results').set ('html', _self.templates.list_view_item.render ({ 'schools': results }));
 
+		// Re-parse the document for accordions and such
+		document.body.fireEvent ('DOMUpdated');
+
 		/*--------------------------------------------------------------------------
 		Map View
 		--------------------------------------------------------------------------*/

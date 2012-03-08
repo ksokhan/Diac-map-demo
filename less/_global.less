@@ -208,63 +208,50 @@
 	@landscape_architecture: purple;
 	.school {
 		position: relative;
-		width: 300px;
 
 		.related_disciplines {
+			font-size: 0;
+			line-height: 0 !important;
+			margin: 0 !important;
+			list-style-type: none;
 			width: 100%;
 			position: absolute;
 			top: 0;
-			display: table;
+			overflow: hidden;
+			white-space: nowrap;
 
-			ul {
-				display: table-row;
-				margin: 0 !important;
-				&:hover {
-					li {
-						width: none;
-						height: 20px;
+			* {
+				.transitions (opacity, 0.5s, ease-in-out);
+			}
+			&:hover {
+				li {
+					line-height: 18px !important;
+
+					&:hover span {
+						opacity: 1;
+						font-size: 12px;
+						line-height: 25px !important;
 					}
 				}
 			}
-			li, li span {
-		    	.transitions (~"width, height, opacity, font-size", 0.3s, ease-in-out);
-		    }
 			li {
-				display: table-cell;
+				vertical-align: top;
+				overflow: hidden;
+				line-height: 0 !important;
 
-				&.of_1 { width: 100%; }
-				&.of_2 { width: 100% / 2; }
-				&.of_3 { width: 100% / 3; }
-				&.of_4 { width: 100% / 4; }
-				&.of_5 { width: 100% / 5; }
-				&.of_6 { width: 100% / 6; }
+				span {
+					opacity: 0;
+					padding: 0 10px;
+					font-size: 5px;
+					line-height: 5px;
+				}
+
 				&.architecture { background-color: @architecture; }
 				&.fashion_design { background-color: @fashion_design; }
 				&.graphic_design { background-color: @graphic_design; }
 				&.industrial_design { background-color: @industrial_design; }
 				&.interior_design { background-color: @interior_design; }
 				&.landscape_architecture { background-color: @landscape_architecture; }
-				span {
-					padding: 0 10px;
-					display: block;
-					color: white;
-					line-height: 5px;
-					font-size: 0;
-					opacity: 0;
-					white-space: nowrap;
-					overflow: hidden;
-					font-weight: bold;
-					text-shadow: black 0.1em 0.1em 0.2em;
-				}
-				&:hover {
-					width: 60% !important;
-
-					span {
-						line-height: 20px;
-						opacity: 1;
-						font-size: 12px;
-					}
-				}
 			}
 		}
 	}
