@@ -2169,6 +2169,7 @@ html {
 body {
   width: 940px;
   margin: 0 auto 40px;
+  font-family: "Open Sans", sans-serif;
 }
 header {
   position: relative;
