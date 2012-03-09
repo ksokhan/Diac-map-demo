@@ -2295,7 +2295,10 @@ header nav li a:hover {
 #sidebar .box ul li input[type=checkbox] {
   margin-top: -4px;
 }
-#sidebar .box ul li input[type=checkbox][checked] {
+#sidebar .box ul li input[type=checkbox]:not(:checked) {
+  opacity: 0;
+}
+#sidebar .box ul:hover input[type=checkbox]:not(:checked) {
   opacity: 1;
 }
 #sidebar .box.inactive {
@@ -2304,17 +2307,11 @@ header nav li a:hover {
 #sidebar .box.inactive input[type=checkbox] {
   opacity: 0;
 }
-#sidebar .box.inactive ul {
-  margin-left: 10px;
-}
 #sidebar .box.inactive:hover {
   opacity: 0.8;
 }
 #sidebar .box.inactive:hover input[type=checkbox] {
   opacity: 1;
-}
-#sidebar .box.inactive:hover ul {
-  margin-left: 26px;
 }
 /*--------------------------------------------------------------------------
 	View Modes
@@ -2324,4 +2321,67 @@ header nav li a:hover {
 }
 #view_mode_triggers .inactive a {
   color: #ccc;
+}
+/*--------------------------------------------------------------------------
+	School Items (with accordion discipline header)
+	--------------------------------------------------------------------------*/
+.school {
+  position: relative;
+}
+.school .related_disciplines {
+  font-size: 0;
+  line-height: 0 !important;
+  margin: 0 !important;
+  list-style-type: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.school .related_disciplines * {
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-property: opacity;
+  -o-transition-duration: 0.5s;
+}
+.school .related_disciplines:hover li {
+  line-height: 18px !important;
+}
+.school .related_disciplines:hover li:hover span {
+  opacity: 1;
+  font-size: 12px;
+  line-height: 25px !important;
+}
+.school .related_disciplines li {
+  vertical-align: top;
+  overflow: hidden;
+  line-height: 0 !important;
+}
+.school .related_disciplines li span {
+  opacity: 0;
+  padding: 0 10px;
+  font-size: 5px;
+  line-height: 5px;
+}
+.school .related_disciplines li.architecture {
+  background-color: #ff0000;
+}
+.school .related_disciplines li.fashion_design {
+  background-color: #ffa500;
+}
+.school .related_disciplines li.graphic_design {
+  background-color: #ffff00;
+}
+.school .related_disciplines li.industrial_design {
+  background-color: #008000;
+}
+.school .related_disciplines li.interior_design {
+  background-color: #0000ff;
+}
+.school .related_disciplines li.landscape_architecture {
+  background-color: #800080;
 }

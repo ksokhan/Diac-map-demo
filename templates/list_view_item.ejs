@@ -1,8 +1,14 @@
 <% for (var i = 0; i < schools.length; i++) { %>
 <div class="school">
 	<h1><%= schools[i].name %></h1>
-	<p><%= schools[i].url %></p>
+	<h2><a href="<%= schools[i].url %>"><%= schools[i].url %></a></h2>
+	<p class="description"><%= schools[i].description %></p>
 
 	<a href="#">More Info &gt;</a>
+	<ul class="related_disciplines">
+		<% for (var j = 0; j < schools[i].disciplines.length; j++) { %>
+			<li class="<%= toClassName (schools[i].disciplines[j]) %> of_<%= schools[i].disciplines.length %>"><span><%= schools[i].disciplines[j] %></span></li>
+		<% } %>
+	</ul>
 </div>
 <% } %>

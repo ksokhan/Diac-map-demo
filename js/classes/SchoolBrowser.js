@@ -5,7 +5,7 @@ var SchoolBrowser = new Class ({
 	'Implements': [Options, Events],
 
 	'options': {
-		'view_mode': 'map',
+		'view_mode': 'list',
 		'map_zoom_level': 6
 	},
 
@@ -147,6 +147,9 @@ var SchoolBrowser = new Class ({
 		--------------------------------------------------------------------------*/
 		$$('#list_view #results').set ('html', _self.templates.list_view_item.render ({ 'schools': results }));
 
+		// Re-parse the document for accordions and such
+		document.body.fireEvent ('DOMUpdated');
+
 		/*--------------------------------------------------------------------------
 		Map View
 		--------------------------------------------------------------------------*/
@@ -254,6 +257,9 @@ var SchoolBrowser = new Class ({
 			// Update the triggers
 			inactive_trigger_element.removeClass ('active').addClass ('inactive');
 			active_trigger_element.removeClass ('inactive').addClass ('active');
+
+			// Check the radio
+			active_trigger_element.getElement ('input[type=radio]').set ('checked', 'checked');
 
 			// Update ourselves
 			_self.view_mode = view_mode;

@@ -6,7 +6,7 @@
 		<title>Diac Map</title>
 
 		<!--HTML5 RESET-->
-		<link rel="stylesheet" type="text/css" href="css/html5reset.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/html5reset.css" /> -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic' rel='stylesheet' type='text/css'>
 
 		<!-- Styles -->
@@ -20,11 +20,9 @@
 		<script type="text/javascript" src="libraries/ejs/ejs.js"></script>
 
 		<!-- Scripts -->
+		<script type="text/javascript" src="js/classes/DisciplineAccordion.js"></script>
 		<script type="text/javascript" src="js/classes/SchoolBrowser.js"></script>
 		<script type="text/javascript" src="js/_global.js"></script>
-
-		<!-- Google Map API -->
-		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHXocBCL0RRUGklPm1A6_X_pwy2yJ1NL8&sensor=false"></script>
 
 		<!-- Custom Script -->
 		<script type="text/javascript">
@@ -82,8 +80,8 @@
 					<div class="handle">View Mode</div>
 					<div class="box">
 						<ul id="view_mode_triggers">
-							<li id="list_view_mode_trigger" data-exec="setViewMode" data-exec-options="{ 'view_mode': 'list' }"><label class="radio"><input name="mapView" type="radio" />List View</a></li>
-							<li id="map_view_mode_trigger" data-exec="setViewMode" data-exec-options="{ 'view_mode': 'map' }"><label class="radio"><input name="mapView" type="radio" checked="true" />Map View</a></li>
+							<li id="list_view_mode_trigger" data-exec="setViewMode" data-exec-options="{ 'view_mode': 'list' }"><label class="radio"><input name="mapView" type="radio" />List View</label></li>
+							<li id="map_view_mode_trigger" data-exec="setViewMode" data-exec-options="{ 'view_mode': 'map' }"><label class="radio"><input name="mapView" type="radio" checked="true" />Map View</label></li>
 						</ul>
 					</div> <div class="handle">Design Discipline</div>
 					<div class="box">
@@ -134,6 +132,9 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- Google Map API -->
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHXocBCL0RRUGklPm1A6_X_pwy2yJ1NL8&sensor=false"></script>
 	</body>
 
 </html>

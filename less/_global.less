@@ -14,11 +14,9 @@
 	@bl: #006CC4;
 	@rd: #D60404;
 
-
 	/*--------------------------------------------------------------------------
 	Typography
 	--------------------------------------------------------------------------*/
-
 	html {
 	    font-size: 0.8em;
 	}
@@ -157,29 +155,33 @@
 		    ul {
 				list-style: none;
 
-				li {
-				    input[type=checkbox] {
-				    	margin-top: -4px;
+					li {
+					    input[type=checkbox] {
+					    	margin-top: -4px;
 
-					&[checked] { opacity: 1; }
-				    }
-				}
+					    	&:not(:checked) {
+					    		opacity: 0;
+					    	}
+					    }
+					}
+					&:hover {
+						input[type=checkbox] {
+					    	&:not(:checked) {
+					    		opacity: 1;
+					    	}
+					    }
+					}
 		    }
 		    &.inactive {
 		    	opacity: 0.4;
 		    	input[type=checkbox] {
 		    		opacity: 0;
 		    	}
-		    	ul {
-		    		margin-left: 10px;
-		    	}
+
 		    	&:hover {
 		    		opacity: 0.8;
 		    		input[type=checkbox] {
 		    			opacity: 1;
-		    		}
-		    		ul {
-		    			margin-left: 26px;
 		    		}
 		    	}
 		    }
@@ -195,5 +197,64 @@
 		}
 		.inactive a {
 			color: #ccc;
+		}
+	}
+
+	/*--------------------------------------------------------------------------
+	School Items (with accordion discipline header)
+	--------------------------------------------------------------------------*/
+	@architecture: red;
+	@fashion_design: orange;
+	@graphic_design: yellow;
+	@industrial_design: green;
+	@interior_design: blue;
+	@landscape_architecture: purple;
+	.school {
+		position: relative;
+
+		.related_disciplines {
+			font-size: 0;
+			line-height: 0 !important;
+			margin: 0 !important;
+			list-style-type: none;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			overflow: hidden;
+			white-space: nowrap;
+
+			* {
+				.transitions (opacity, 0.5s, ease-in-out);
+			}
+			&:hover {
+				li {
+					line-height: 18px !important;
+
+					&:hover span {
+						opacity: 1;
+						font-size: 12px;
+						line-height: 25px !important;
+					}
+				}
+			}
+			li {
+				vertical-align: top;
+				overflow: hidden;
+				line-height: 0 !important;
+
+				span {
+					opacity: 0;
+					padding: 0 10px;
+					font-size: 5px;
+					line-height: 5px;
+				}
+
+				&.architecture { background-color: @architecture; }
+				&.fashion_design { background-color: @fashion_design; }
+				&.graphic_design { background-color: @graphic_design; }
+				&.industrial_design { background-color: @industrial_design; }
+				&.interior_design { background-color: @interior_design; }
+				&.landscape_architecture { background-color: @landscape_architecture; }
+			}
 		}
 	}

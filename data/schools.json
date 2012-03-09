@@ -1,6 +1,7 @@
 [
 	{
 		"name": "Algonquin College",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma",
 		"address": "1385 Woodroffe Avenue",
 		"city": "Nepean ON K2G 1V8",
@@ -15,6 +16,7 @@
 	},
 	{
 		"name": "Cambrian College",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma",
 		"address": "1400 Barrydowne Road",
 		"city": "Sudbury ON P1B 8K9",
@@ -29,6 +31,7 @@
 	},
 	{
 		"name": "Canadore College",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma",
 		"address": "",
 		"city": "North Bay ON P1B 8K9",
@@ -43,6 +46,7 @@
 	},
 	{
 		"name": "Centennial College Centre for Creative Communications",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma",
 		"address": "951 Carlaw Avenue",
 		"city": "Toronto, ON M4K 3M2",
@@ -57,6 +61,7 @@
 	},
 	{
 		"name": "Conestoga College",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma",
 		"address": "299 Doon Valley Drive",
 		"city": "Kitchener ON N2G 4M4",
@@ -71,6 +76,7 @@
 	},
 	{
 		"name": "Durham College",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma",
 		"address": "2000 Simcoe St. North",
 		"city": "Oshawa ON L1H 7L7",
@@ -85,6 +91,7 @@
 	},
 	{
 		"name": "Fanshawe College of Applied Arts & Technology",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma",
 		"address": "1460 Oxford Street East",
 		"city": "London ON N5Y 5R6",
@@ -99,6 +106,7 @@
 	},
 	{
 		"name": "George Brown College",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma",
 		"address": "200 King Street East St. James Campus",
 		"city": "Toronto ON M5A 3W8",
@@ -113,6 +121,7 @@
 	},
 	{
 		"name": "Georgian College",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma",
 		"address": "1 Georgian Drive",
 		"city": "Barrie ON L4M 3X9",
@@ -127,6 +136,7 @@
 	},
 	{
 		"name": "Humber College",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma",
 		"address": "Media Studies & Information Technology 3199 Lake Shore Blvd W, F102",
 		"city": "Toronto, ON M8V 1K8",
@@ -141,6 +151,7 @@
 	},
 	{
 		"name": "Loyalist College",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma to commence Sept. 2012",
 		"address": "376 Wallbridge-Loyalist Road",
 		"city": "Belleville, ON K8N 5B9",
@@ -155,6 +166,7 @@
 	},
 	{
 		"name": "Niagara College",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma",
 		"address": "300 Woodlawn Road",
 		"city": "Welland, Ontario L3C 7L3",
@@ -169,11 +181,12 @@
 	},
 	{
 		"name": "Ontario College of Art & Design",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "4 Year Bachelor of Design",
 		"address": "100 McCaul Street",
 		"city": "Toronto ON M5T 1W1",
 		"url": "www.ocad.on.ca",
-		"disciplines": ["graphic design", "architecture", "interior", "landscape architecture", "fashion design"],
+		"disciplines": ["graphic design", "architecture", "interior design", "landscape architecture", "fashion design"],
 		"certifications": ["degree", "diploma"],
 		"program_durations": ["3 years", "4 years"],
 		"geocoded_location": {
@@ -183,6 +196,7 @@
 	},
 	{
 		"name": "St. Clair College",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma",
 		"address": "2000 Talbot Rd. West",
 		"city": "Windsor ON N9A 6S4",
@@ -197,6 +211,7 @@
 	},
 	{
 		"name": "St. Lawrence College",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma",
 		"address": "King & Portsmouth",
 		"city": "Kingston ON K7L 5A6",
@@ -211,6 +226,7 @@
 	},
 	{
 		"name": "Sault College",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma",
 		"address": "443 Northern Ave",
 		"city": "Sault Ste. Marie ON P6A 5L3",
@@ -225,6 +241,7 @@
 	},
 	{
 		"name": "Seneca College School of Communications Arts",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma",
 		"address": "70 The Pond Road",
 		"city": "Toronto ON M3J 3M6",
@@ -239,6 +256,7 @@
 	},
 	{
 		"name": "Sheridan College",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "joint 4 Year Honours Bachelor of Design with York University",
 		"address": "1430 Trafalgar Road",
 		"city": "Oakville ON L6H 2L1",
@@ -253,6 +271,7 @@
 	},
 	{
 		"name": "York University",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "joint 4 Year Honours Bachelor of Design with Sheridan College",
 		"address": "4700 Keele Street",
 		"city": "Toronto ON M3J 1P3",
@@ -267,6 +286,7 @@
 	},
 	{
 		"name": "La Cité Collégiale",
+		"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 		"program_duration": "3 Year Graphic Design Diploma (Completely French college)",
 		"address": "801 pr. de l Aviation",
 		"city": "Ottawa ON K1K 4R3",
