@@ -152,12 +152,15 @@
 		    * {
 		    	.transitions (all, 0.1s, ease-in-out);
 		    }
+
 		    ul {
 				list-style: none;
 
 				li {
 				    input[type=checkbox] {
 				    	margin-top: -4px;
+
+					&[checked] { opacity: 1; }
 				    }
 				}
 		    }
