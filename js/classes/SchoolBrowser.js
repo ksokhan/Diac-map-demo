@@ -112,21 +112,28 @@ var SchoolBrowser = new Class ({
 		});
 
 		// Plot the markers for *all* schools
+		_self.markers = {};
 		_self.schools.each (function (school, index) {
-			school.marker = new google.maps.Marker ({
+			var new_marker = new google.maps.Marker ({
 				'map': _self.google_map,
 				'position': new google.maps.LatLng (school.geocoded_location.x, school.geocoded_location.y),
 				'title': school.name
 			});
 
+			// The marker needs to how who its school is
+			new_marker.school = school;
+
 			// Rig it for the info window
-			google.maps.event.addListener (school.marker, 'click', function () {
+			google.maps.event.addListener (new_marker, 'click', function () {
 				// Set the contents of the window to the description of the point
 				_self.google_map.info_window.setContent(_self.templates.map_info_bubble.render (school));
 
 				// Show the window!
-				_self.google_map.info_window.open(_self.google_map, school.marker);
+				_self.google_map.info_window.open(_self.google_map, new_marker);
 			});
+
+			// Store the marker, indexed on the school name
+			_self.markers[school.name] = new_marker;
 		});
 	},
 
@@ -153,8 +160,13 @@ var SchoolBrowser = new Class ({
 		/*--------------------------------------------------------------------------
 		Map View
 		--------------------------------------------------------------------------*/
-		_self.schools.each (function (school, index) {
-			school.marker.setMap (results.contains (school) ? _self.google_map : null);
+		// Hide all markers
+		Object.each (_self.markers, function (marker, index) {
+			marker.setMap (null);
+		});
+		// Now show the ones that had results
+		results.each (function (school, index) {
+			_self.markers[school.name].setMap (_self.google_map);
 		});
 
 		// Update the sidebar boxes
@@ -199,30 +211,48 @@ var SchoolBrowser = new Class ({
 	'searchSchools': function () {
 		var _self = this;
 
-		// Go through each school, and check it against ALLLLL the criteria
+		// Go through each school...
 		var results = [];
-		_self.schools.each (function (school, index) {
-			// Disciplines
-			var matches_disciplines = school.disciplines.some (function (item, index) {
-				return _self.criteria.disciplines.length == 0 || _self.criteria.disciplines.contains (item);
+		_self.schools.each (function (school, school_index) {
+			// Then through each of its programs...
+			var matching_programs = [];
+			school.programs.each (function (program, program_index) {
+				// Disciplines
+				var matches_disciplines = program.disciplines.some (function (item, index) {
+					return _self.criteria.disciplines.length == 0 || _self.criteria.disciplines.contains (item);
+				});
+
+				// Certifications
+				var matches_certifications = program.certifications.some (function (item, index) {
+					return _self.criteria.certifications.length == 0 ||  _self.criteria.certifications.contains (item);
+				});
+
+				// Program Durations
+				var matches_program_durations = program.durations.some (function (item, index) {
+					return _self.criteria.program_durations.length == 0 || _self.criteria.program_durations.contains (item);
+				});
+
+				// Locations
+				/* This logic takes too much thinking. I am le tired. */
+
+				// If it matches all of the above, add it to the results
+				if (matches_disciplines && matches_certifications && matches_program_durations) {
+					matching_programs.push (program);
+				}
 			});
 
-			// Certifications
-			var matches_certifications = school.certifications.some (function (item, index) {
-				return _self.criteria.certifications.length == 0 ||  _self.criteria.certifications.contains (item);
-			});
-
-			// Program Durations
-			var matches_program_durations = school.program_durations.some (function (item, index) {
-				return _self.criteria.program_durations.length == 0 || _self.criteria.program_durations.contains (item);
-			});
-
-			// Locations
-			/* This logic takes too much thinking. I am le tired. */
-
-			// If it matches all of the above, add it to the results
-			if (matches_disciplines && matches_certifications && matches_program_durations) {
-				results.push (school);
+			// Found matching programs?
+			if (matching_programs.length) {
+				// Clone the school, in a way that doesn't crash...
+				/*var school_clone = {};
+				for (var i in school) {
+					school_clone[i] = school[i];
+				}*/
+				var school_clone = Object.clone (school);
+				// Replace its programs with the ones that matched the search
+				school_clone.programs = matching_programs;
+				// Add it as a result
+				results.push (school_clone);
 			}
 		});
 
