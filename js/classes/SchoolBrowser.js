@@ -199,30 +199,44 @@ var SchoolBrowser = new Class ({
 	'searchSchools': function () {
 		var _self = this;
 
-		// Go through each school, and check it against ALLLLL the criteria
+		// Go through each school...
 		var results = [];
-		_self.schools.each (function (school, index) {
-			// Disciplines
-			var matches_disciplines = school.disciplines.some (function (item, index) {
-				return _self.criteria.disciplines.length == 0 || _self.criteria.disciplines.contains (item);
+		_self.schools.each (function (school, school_index) {
+			// Then through each of its programs...
+			var matching_programs = [];
+			school.programs.each (function (program, program_index) {
+				// Disciplines
+				var matches_disciplines = program.disciplines.some (function (item, index) {
+					return _self.criteria.disciplines.length == 0 || _self.criteria.disciplines.contains (item);
+				});
+
+				// Certifications
+				var matches_certifications = program.certifications.some (function (item, index) {
+					return _self.criteria.certifications.length == 0 ||  _self.criteria.certifications.contains (item);
+				});
+
+				// Program Durations
+				var matches_program_durations = program.program_durations.some (function (item, index) {
+					return _self.criteria.program_durations.length == 0 || _self.criteria.program_durations.contains (item);
+				});
+
+				// Locations
+				/* This logic takes too much thinking. I am le tired. */
+
+				// If it matches all of the above, add it to the results
+				if (matches_disciplines && matches_certifications && matches_program_durations) {
+					matching_programs.push (school);
+				}
 			});
 
-			// Certifications
-			var matches_certifications = school.certifications.some (function (item, index) {
-				return _self.criteria.certifications.length == 0 ||  _self.criteria.certifications.contains (item);
-			});
-
-			// Program Durations
-			var matches_program_durations = school.program_durations.some (function (item, index) {
-				return _self.criteria.program_durations.length == 0 || _self.criteria.program_durations.contains (item);
-			});
-
-			// Locations
-			/* This logic takes too much thinking. I am le tired. */
-
-			// If it matches all of the above, add it to the results
-			if (matches_disciplines && matches_certifications && matches_program_durations) {
-				results.push (school);
+			// Found matching programs?
+			if (matching_programs.length) {
+				// Clone the school object
+				var school_result = Object.clone (school);
+				// Replace its programs with the ones that matched the search
+				school_result.programs = matching_programs;
+				// Add it as a result
+				results.push (school_result);
 			}
 		});
 
