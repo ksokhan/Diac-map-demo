@@ -5,11 +5,14 @@
 			var program = school.programs[j];
 %>
 			<div class="school">
-				<h1><%= program.name %> (<%= school.name %>)</h1>
-				<h2><a href="<%= program.url %>"><%= school.url %></a></h2>
+				<h1><%= program.name %></h1>
+				<h2><%= school.name %></h2>
+				<h3><a href="<%= program.url %>"><%= program.url %></a></h3>
+
 				<p class="description"><%= program.description %></p>
 
 				<a href="#">More Info &gt;</a>
+
 				<ul class="related_disciplines">
 					<%
 						for (var k = 0; k < program.disciplines.length; k++) {
