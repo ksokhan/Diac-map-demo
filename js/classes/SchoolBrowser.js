@@ -112,21 +112,28 @@ var SchoolBrowser = new Class ({
 		});
 
 		// Plot the markers for *all* schools
+		_self.markers = {};
 		_self.schools.each (function (school, index) {
-			school.marker = new google.maps.Marker ({
+			var new_marker = new google.maps.Marker ({
 				'map': _self.google_map,
 				'position': new google.maps.LatLng (school.geocoded_location.x, school.geocoded_location.y),
 				'title': school.name
 			});
 
+			// The marker needs to how who its school is
+			new_marker.school = school;
+
 			// Rig it for the info window
-			google.maps.event.addListener (school.marker, 'click', function () {
+			google.maps.event.addListener (new_marker, 'click', function () {
 				// Set the contents of the window to the description of the point
 				_self.google_map.info_window.setContent(_self.templates.map_info_bubble.render (school));
 
 				// Show the window!
-				_self.google_map.info_window.open(_self.google_map, school.marker);
+				_self.google_map.info_window.open(_self.google_map, new_marker);
 			});
+
+			// Store the marker, indexed on the school name
+			_self.markers[school.name] = new_marker;
 		});
 	},
 
@@ -153,8 +160,13 @@ var SchoolBrowser = new Class ({
 		/*--------------------------------------------------------------------------
 		Map View
 		--------------------------------------------------------------------------*/
-		_self.schools.each (function (school, index) {
-			school.marker.setMap (results.contains (school) ? _self.google_map : null);
+		// Hide all markers
+		Object.each (_self.markers, function (marker, index) {
+			marker.setMap (null);
+		});
+		// Now show the ones that had results
+		results.each (function (school, index) {
+			_self.markers[school.name].setMap (_self.google_map);
 		});
 
 		// Update the sidebar boxes
@@ -231,14 +243,16 @@ var SchoolBrowser = new Class ({
 
 			// Found matching programs?
 			if (matching_programs.length) {
-				// Clone the school object
-				// var school_result = Object.clone (school);
-				var school_result = school;
-				console.log (school_result);
+				// Clone the school, in a way that doesn't crash...
+				/*var school_clone = {};
+				for (var i in school) {
+					school_clone[i] = school[i];
+				}*/
+				var school_clone = Object.clone (school);
 				// Replace its programs with the ones that matched the search
-				school_result.programs = matching_programs;
+				school_clone.programs = matching_programs;
 				// Add it as a result
-				results.push (school_result);
+				results.push (school_clone);
 			}
 		});
 
