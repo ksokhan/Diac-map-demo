@@ -44,7 +44,7 @@
 					<li><a href="#">About</a></li>
 					<li><a href="#">Design Pulse</a></li>
 					<li><a href="#">Connect with Designers</a></li>
-					<li><a href="#">Get a Design Education</a></li>
+					<li><a class="active" href="#">Get a Design Education</a></li>
 				</ul>
 			</nav>
 		</header>

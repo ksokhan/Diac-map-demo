@@ -96,7 +96,7 @@ var SchoolBrowser = new Class ({
 			'mapTypeId': google.maps.MapTypeId.ROADMAP,
 			'mapTypeControl': false,
 			'streetViewControl': false,
-			'styles': [{'featureType': 'water', 'stylers': [{ 'hue': '#0077ff' }, { 'saturation': -37 }, { 'lightness': 13 } ] }, {'featureType': 'administrative', 'elementType': 'geometry', 'stylers': [{ 'lightness': 49 }, { 'visibility': 'simplified' } ] }, {'featureType': 'poi', 'stylers': [{ 'visibility': 'off' } ] }, {'featureType': 'road', 'stylers': [{ 'visibility': 'off' } ] } ],
+			'styles': [{'featureType': 'water', 'stylers': [{ 'hue': '#323C41' }, { 'saturation': 13 }, { 'lightness': -23 } ] }, {'featureType': 'administrative', 'elementType': 'geometry', 'stylers': [{ 'lightness': 49 }, { 'visibility': 'simplified' } ] }, {'featureType': 'poi', 'stylers': [{ 'visibility': 'off' } ] }, {'featureType': 'road', 'stylers': [{ 'visibility': 'off' } ] } ],
     		});
 
 		// Create an info window(we'll only allow one to be shown at once)

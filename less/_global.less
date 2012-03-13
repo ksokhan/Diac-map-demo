@@ -11,15 +11,23 @@
 	@results_width: @site_width - @sidebar_width;
 
 	// colours
-	@bl: #006CC4;
+	@bl: #007E86;
 	@rd: #D60404;
+	@wt: #E7F2F2;
+	@drk_grey: #323C41;
 
 	/*--------------------------------------------------------------------------
 	Typography
 	--------------------------------------------------------------------------*/
 	html {
 	    font-size: 0.8em;
+	    background: #505A5F;
 	}
+
+	a {
+	    color: @bl;
+	}
+
 
 	/*--------------------------------------------------------------------------
 	Body
@@ -28,6 +36,7 @@
 		width: @site_width;
 		margin: 0 auto 40px;
 		font-family: @baseFontFamily;
+		color: #E7F2F2;
 	}
 	header {
 		position: relative;
@@ -63,13 +72,14 @@
 
 				a {
 				    text-decoration: none;
-				    color: @bl;
-				    border-bottom: solid 1px lighten(@bl, 55%);
+				    color: @wt;
+				    padding: 10px 15px;
 
-				    &:hover {
+
+				    &:hover, &.active {
 						text-decoration: none;
-						border-bottom-color: lighten(@bl, 20%);
-						color: @bl - #111;
+						background: @bl;
+						color: @wt + #111;
 				    }
 				}
 			}
@@ -79,9 +89,11 @@
 		h1 {
 			font-size: 25px;
 			margin: 10px 0;
+			color: #fff;
 		}
 
 		#bread_crumbs {
+		    display: none;
 			li {
 				display: inline;
 			}
@@ -103,7 +115,6 @@
 		bottom: 0;
 		left: 0;
 		width: @results_width;
-		.box-shadow(inset 0 0 1px #333);
 
 		.view {
 			position: absolute;
@@ -112,7 +123,7 @@
 			right: 0;
 			bottom: 0;
 			left: 0;
-			background: #eee;
+			background: @drk_grey;
 		}
 	}
 	#map_canvas {
@@ -131,11 +142,14 @@
 		width: @sidebar_width;
 		overflow-y: auto;
 
+		label {
+		    color: @wt;
+		}
 		.handle {
 			line-height: 20px;
 			margin-bottom: 5px;
 			text-indent: 25px;
-			color: @rd;
+			color: @wt;
 			font-weight: 600;
 			position: relative;
 
@@ -203,14 +217,25 @@
 	/*--------------------------------------------------------------------------
 	School Items (with accordion discipline header)
 	--------------------------------------------------------------------------*/
-	@architecture: red;
-	@fashion_design: orange;
-	@graphic_design: yellow;
-	@industrial_design: green;
-	@interior_design: blue;
-	@landscape_architecture: purple;
+	@architecture: #D03A22;
+	@fashion_design: #C1147D;
+	@graphic_design: #00AEB9;
+	@industrial_design: #CCB51B;
+	@interior_design: #2E08B2;
+	@landscape_architecture: #14B127;
 	.school {
 		position: relative;
+		margin: 10px 20px 30px;
+		padding-top: 10px;
+
+		h2 {
+		    font-size: 1em;
+		    margin-top: 0;
+
+		    a {
+			color: @bl;
+		    }
+		}
 
 		.related_disciplines {
 			font-size: 0;
@@ -224,7 +249,7 @@
 			white-space: nowrap;
 
 			* {
-				.transitions (opacity, 0.5s, ease-in-out);
+			    .transitions (all, 0.5s, ease-in-out);
 			}
 			&:hover {
 				li {
