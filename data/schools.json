@@ -3,11 +3,19 @@
 		"name": "Algonquin College",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
+				"certifications": ["honours degree"]
+			},
+			{
+				"name": "Some Fashion Program",
+				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
+				"url": "www.program-url.com",
+				"disciplines": ["fashion design"],
+				"durations": ["3 years"],
 				"certifications": ["honours degree"]
 			}
 		],
@@ -23,11 +31,11 @@
 		"name": "Cambrian College",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
 			}
 		],
@@ -43,11 +51,11 @@
 		"name": "Canadore College",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
 			}
 		],
@@ -63,11 +71,11 @@
 		"name": "Centennial College Centre for Creative Communications",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
 			}
 		],
@@ -83,11 +91,11 @@
 		"name": "Conestoga College",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
 			}
 		],
@@ -103,12 +111,28 @@
 		"name": "Durham College",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
-				"certifications": ["honours degree"]
+				"disciplines": ["graphic design"],
+				"durations": ["3 years"],
+				"certifications": ["diploma"]
+			},
+			{
+				"name": "Some Fashion Program",
+				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
+				"url": "www.program-url.com",
+				"disciplines": ["fashion design"],
+				"durations": ["3 years"],
+				"certifications": ["diploma"]
+			},
+			{
+				"name": "Some Interior Design Program",
+				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
+				"url": "www.program-url.com",
+				"disciplines": ["interior design"],
+				"durations": ["3 years"],
+				"certifications": ["diploma"]
 			}
 		],
 		"address": "2000 Simcoe St. North",
@@ -123,12 +147,20 @@
 		"name": "Fanshawe College of Applied Arts & Technology",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
+			},
+			{
+				"name": "Some Interior Design Program",
+				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
+				"url": "www.program-url.com",
+				"disciplines": ["interior design"],
+				"durations": ["3 years"],
+				"certifications": ["diploma"]
 			}
 		],
 		"address": "1460 Oxford Street East",
@@ -143,12 +175,20 @@
 		"name": "George Brown College",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
+			},
+			{
+				"name": "Some Interior Design Program",
+				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
+				"url": "www.program-url.com",
+				"disciplines": ["interior design"],
+				"durations": ["3 years"],
+				"certifications": ["diploma"]
 			}
 		],
 		"address": "200 King Street East St. James Campus",
@@ -163,11 +203,11 @@
 		"name": "Georgian College",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
 			}
 		],
@@ -183,11 +223,11 @@
 		"name": "Humber College",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
 			}
 		],
@@ -203,11 +243,11 @@
 		"name": "Loyalist College",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
 			}
 		],
@@ -223,12 +263,20 @@
 		"name": "Niagara College",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
+			},
+			{
+				"name": "Some Interior Design Program",
+				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
+				"url": "www.program-url.com",
+				"disciplines": ["interior design"],
+				"durations": ["3 years"],
+				"certifications": ["diploma"]
 			}
 		],
 		"address": "300 Woodlawn Road",
@@ -243,12 +291,20 @@
 		"name": "Ontario College of Art & Design",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
+			},
+			{
+				"name": "Some Industrial Design Program",
+				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
+				"url": "www.program-url.com",
+				"disciplines": ["industrial design"],
+				"durations": ["4 years"],
+				"certifications": ["degree"]
 			}
 		],
 		"address": "100 McCaul Street",
@@ -263,11 +319,11 @@
 		"name": "St. Clair College",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
 			}
 		],
@@ -283,12 +339,20 @@
 		"name": "St. Lawrence College",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
+			},
+			{
+				"name": "Some Interior Design Program",
+				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
+				"url": "www.program-url.com",
+				"disciplines": ["interior design"],
+				"durations": ["3 years"],
+				"certifications": ["diploma"]
 			}
 		],
 		"address": "King & Portsmouth",
@@ -303,11 +367,11 @@
 		"name": "Sault College",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
 			}
 		],
@@ -323,12 +387,20 @@
 		"name": "Seneca College School of Communications Arts",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
+			},
+			{
+				"name": "Some Interior Design Program",
+				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
+				"url": "www.program-url.com",
+				"disciplines": ["interior design"],
+				"durations": ["3 years"],
+				"certifications": ["diploma"]
 			}
 		],
 		"address": "70 The Pond Road",
@@ -343,12 +415,20 @@
 		"name": "Sheridan College",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["4 years"],
 				"certifications": ["honours degree"]
+			},
+			{
+				"name": "Another Graphic Design Program",
+				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
+				"url": "www.program-url.com",
+				"disciplines": ["graphic design"],
+				"durations": ["3 years"],
+				"certifications": ["diploma"]
 			}
 		],
 		"address": "1430 Trafalgar Road",
@@ -363,12 +443,36 @@
 		"name": "York University",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["4 years"],
 				"certifications": ["honours degree"]
+			},
+			{
+				"name": "Some Fashion Program",
+				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
+				"url": "www.program-url.com",
+				"disciplines": ["fashion design"],
+				"durations": ["4 years"],
+				"certifications": ["honours degree"]
+			},
+			{
+				"name": "Some Architecture Program",
+				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
+				"url": "www.program-url.com",
+				"disciplines": ["architecture"],
+				"durations": ["3 years"],
+				"certifications": ["diploma"]
+			},
+			{
+				"name": "Some Industrial Design Program",
+				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
+				"url": "www.program-url.com",
+				"disciplines": ["industrial design"],
+				"durations": ["4 years"],
+				"certifications": ["degree"]
 			}
 		],
 		"address": "4700 Keele Street",
@@ -383,11 +487,11 @@
 		"name": "La Cité Collégiale",
 		"programs": [
 			{
-				"name": "Some Program Name",
+				"name": "Some Graphic Design Program",
 				"description": "This is where the we'd write the description of the program. It can be as long as we want it to be, really, but it'll likely have to get truncated to two or three lines in some contexts. But no worries, as it can always be seen in full on the full school detail page, or perhaps we can let them click \"More\" and see the full description. We'll see.",
 				"url": "www.program-url.com",
-				"discplines": ["graphic design"],
-				"duration": ["3 years", "4 years"],
+				"disciplines": ["graphic design"],
+				"durations": ["3 years", "4 years"],
 				"certifications": ["honours degree"]
 			}
 		],

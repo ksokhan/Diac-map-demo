@@ -216,7 +216,7 @@ var SchoolBrowser = new Class ({
 				});
 
 				// Program Durations
-				var matches_program_durations = program.program_durations.some (function (item, index) {
+				var matches_program_durations = program.durations.some (function (item, index) {
 					return _self.criteria.program_durations.length == 0 || _self.criteria.program_durations.contains (item);
 				});
 
@@ -225,14 +225,16 @@ var SchoolBrowser = new Class ({
 
 				// If it matches all of the above, add it to the results
 				if (matches_disciplines && matches_certifications && matches_program_durations) {
-					matching_programs.push (school);
+					matching_programs.push (program);
 				}
 			});
 
 			// Found matching programs?
 			if (matching_programs.length) {
 				// Clone the school object
-				var school_result = Object.clone (school);
+				// var school_result = Object.clone (school);
+				var school_result = school;
+				console.log (school_result);
 				// Replace its programs with the ones that matched the search
 				school_result.programs = matching_programs;
 				// Add it as a result
