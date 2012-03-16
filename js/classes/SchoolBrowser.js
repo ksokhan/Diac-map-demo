@@ -90,14 +90,36 @@ var SchoolBrowser = new Class ({
 		/*--------------------------------------------------------------------------
 		Set up the map
 		--------------------------------------------------------------------------*/
+
 		_self.google_map = new google.maps.Map ($('map_canvas'), {
 			'center': new google.maps.LatLng(-34.397, 150.644),
 			'zoom': _self.options.map_zoom_level,
 			'mapTypeId': google.maps.MapTypeId.ROADMAP,
 			'mapTypeControl': false,
 			'streetViewControl': false,
-			'styles': [{'featureType': 'water', 'stylers': [{ 'hue': '#323C41' }, { 'saturation': 13 }, { 'lightness': -23 } ] }, {'featureType': 'administrative', 'elementType': 'geometry', 'stylers': [{ 'lightness': 49 }, { 'visibility': 'simplified' } ] }, {'featureType': 'poi', 'stylers': [{ 'visibility': 'off' } ] }, {'featureType': 'road', 'stylers': [{ 'visibility': 'off' } ] } ],
-    		});
+			'styles': [
+			  {
+			    stylers: [
+			      { visibility: "off" }
+			    ]
+			  },{
+			    featureType: "water",
+			    stylers: [
+			      { lightness: -60 },
+			      { saturation: -60 },
+			      { hue: '#505A5F'},
+			      { visibility: "on" }
+			    ]
+			  },
+			  {
+			    featureType: "administrative.province",
+			    elementType: "geometry",
+			    stylers: [
+			      { visibility: "on" }
+			    ]
+			  }
+			]
+		});
 
 		// Create an info window(we'll only allow one to be shown at once)
 		_self.google_map.info_window = new google.maps.InfoWindow({
