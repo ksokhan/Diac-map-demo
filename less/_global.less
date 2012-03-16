@@ -22,6 +22,7 @@
 	html {
 	    font-size: 0.8em;
 	    background: #505A5F;
+	    font-family: @baseFontFamily;
 	}
 
 	a {
@@ -86,11 +87,16 @@
 		}
 	}
 	#content_container {
-		h1 {
-			font-size: 25px;
+
+		h1, h2 {
+			font-size: 18px;
 			margin: 10px 0;
 			color: #fff;
+			margin-bottom: 0;
+			line-height: 130%;
 		}
+		h2 { .opacity(50); font-size: 16px; margin-top: 0;}
+
 
 		#bread_crumbs {
 		    display: none;
@@ -225,16 +231,26 @@
 	@landscape_architecture: #14B127;
 	.school {
 		position: relative;
-		margin: 10px 20px 30px;
+		margin: 10px 5% 30px;
 		padding-top: 10px;
+		width: 40%;
+		float: left;
 
 		h2 {
 		    font-size: 1em;
 		    margin-top: 0;
 
-		    a {
-			color: @bl;
+
+		}
+
+		h3 {
+			a {
+				color: @bl;
+				font-size: 13px;
+				text-decoration: none;
+				border-bottom: solid 1px @bl;
 		    }
+
 		}
 
 		.related_disciplines {

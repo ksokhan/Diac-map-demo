@@ -2301,6 +2301,7 @@ button.btn.small, input[type="submit"].btn.small {
 html {
   font-size: 0.8em;
   background: #505A5F;
+  font-family: "Open Sans", sans-serif;
 }
 a {
   color: #007e86;
@@ -2353,10 +2354,18 @@ header nav li a:hover, header nav li a.active {
   background: #007e86;
   color: #f8ffff;
 }
-#content_container h1 {
-  font-size: 25px;
+#content_container h1, #content_container h2 {
+  font-size: 18px;
   margin: 10px 0;
   color: #fff;
+  margin-bottom: 0;
+  line-height: 130%;
+}
+#content_container h2 {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-size: 16px;
+  margin-top: 0;
 }
 #content_container #bread_crumbs {
   display: none;
@@ -2471,15 +2480,20 @@ header nav li a:hover, header nav li a.active {
 	--------------------------------------------------------------------------*/
 .school {
   position: relative;
-  margin: 10px 20px 30px;
+  margin: 10px 5% 30px;
   padding-top: 10px;
+  width: 40%;
+  float: left;
 }
 .school h2 {
   font-size: 1em;
   margin-top: 0;
 }
-.school h2 a {
+.school h3 a {
   color: #007e86;
+  font-size: 13px;
+  text-decoration: none;
+  border-bottom: solid 1px #007e86;
 }
 .school .related_disciplines {
   font-size: 0;
