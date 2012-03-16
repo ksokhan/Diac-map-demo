@@ -2480,10 +2480,11 @@ header nav li a:hover, header nav li a.active {
 	--------------------------------------------------------------------------*/
 .school {
   position: relative;
-  margin: 10px 5% 30px;
+  margin: 10px 4% 30px;
   padding-top: 10px;
   width: 40%;
-  float: left;
+  display: inline-block;
+  vertical-align: top;
 }
 .school h2 {
   font-size: 1em;
