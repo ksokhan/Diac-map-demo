@@ -20,7 +20,7 @@ Config
 Typography
 --------------------------------------------------------------------------*/
 html {
-	background: @background;
+	background: @background url(/images/logo.repeater.png) no-repeat center 52px;
 }
 a {
 	color: @blue;
@@ -58,6 +58,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	color: white;
 	#font > .normal();
+	background: @background;
 }
 p {
 	color: @text;
@@ -78,7 +79,7 @@ header {
 			text-indent: -999em;
 			display: block;
 
-			background: url(../images/logo.png);
+			background: @background url(../images/logo.png);
 			width: 190px;
 			height: 160px;
 			position: relative;
@@ -96,16 +97,19 @@ header {
 		li {
 			display: inline;
 			margin-left: 20px;
-			font-weight: 600;
+			font-weight: bold;
 
 			a {
-				#font > .medium();
+				#font > .large();
 				text-decoration: none;
 				color: white;
 				padding: 10px 5px;
 
-				&:hover, &.active {
-					text-decoration: none;
+				&:hover {
+					border-bottom: 8px solid fade(@blue, 50%);
+				}
+				&.active {
+					border-bottom: 8px solid @blue;
 				}
 			}
 		}
@@ -118,9 +122,13 @@ header {
 		margin: 10px 0;
 	}
 	h1 {
-		#font > .large();
+		font-size: 36px;
+		margin-top: -5px;
 	}
 	h2 {
+		#font > .large();
+	}
+	h3 {
 		opacity: 0.5;
 		#font > .medium();
 		margin-top: 0;
@@ -152,35 +160,23 @@ App
 		min-height: @app_height;
 	}
 	#map_canvas {
-		width: @results_width;
+		// width: @results_width;
+		width: @results_width - 60;
 		height: @app_height;
-	}
-	#map_view {
-		position: absolute;
-		overflow: auto;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
+		margin-top: 30px;
 	}
 	&.map {
-		height: @app_height;
-
 		#list_view {
 			display: none;
 		}
-		#results_area {
-			position: absolute;
-			top: 0;
-			right: @sidebar_width + @gutter;
-			bottom: 0;
-			left: 0;
-		}
 	}
 	&.list {
-		#results_area {
-			padding-top: 10px;
+		#map_view {
+			visibility: hidden;
 		}
+	}
+	.view {
+		padding: 30px;
 	}
 }
 
@@ -197,8 +193,6 @@ Sidebar
 	background: @deep;
 	padding: 20px;
 
-	label {
-	}
 	.handle {
 		line-height: 20px;
 		margin-bottom: 10px;
@@ -269,13 +263,16 @@ School Items (with accordion discipline header)
 .school {
 	position: relative;
 	padding-top: 10px;
-	width: (@results_width - 90) / 2;
+	width: (@results_width - 90) / 2 - 2;
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 30px;
 	margin-bottom: 30px;
 	line-height: 140%;
 
+	&:nth-child(2n+1) {
+		margin-left: 0;
+	}
 	h1 {
 		margin: 20px 0;
 	}

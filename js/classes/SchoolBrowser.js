@@ -140,7 +140,7 @@ var SchoolBrowser = new Class ({
 				'map': _self.google_map,
 				'position': new google.maps.LatLng (school.geocoded_location.x, school.geocoded_location.y),
 				'title': school.name,
-				icon : './images/pin.png'
+				'icon': './images/pin.png'
 			});
 
 			// The marker needs to how who its school is

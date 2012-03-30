@@ -5,9 +5,9 @@
 			var program = school.programs[j];
 %>
 			<div class="school">
-				<h1><%= program.name %></h1>
-				<h2><%= school.name %></h2>
-				<h3><a href="<%= program.url %>"><%= program.url %></a></h3>
+				<h2><%= program.name %></h2>
+				<h3><%= school.name %></h3>
+				<h4><a href="<%= program.url %>"><%= program.url %></a></h4>
 
 				<p class="description"><%= truncateAt(program.description, 120) %></p>
 

@@ -41,10 +41,10 @@
 			<h1><a href="#">DIAC</a></h1>
 			<nav>
 				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Design Pulse</a></li>
+					<li><a href="#">About Design</a></li>
+					<li><a href="#">Case Studies</a></li>
+					<li><a class="active" href="#">Design Ed</a></li>
 					<li><a href="#">Connect with Designers</a></li>
-					<li><a class="active" href="#">Get a Design Education</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -57,20 +57,19 @@
 				</ul>
 			</nav>
 
-			<h1>School Browser</h1>
-
 			<div id="app">
 				<!-- This is where the map or list views are shown -->
 				<div id="results_area">
 					<div class="view" id="list_view">
+						<h1>School Browser &raquo; List</h1>
 						<div id="results">
 							<!-- Results get added here by the JS -->
 						</div>
 					</div>
 					<div class="view" id="map_view">
+						<h1>School Browser &raquo; Map</h1>
 						<div id="map_canvas"></div>
 					</div>
-
 				</div>
 
 				<!-- The filter panel / sidebar -->

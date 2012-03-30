@@ -34,7 +34,7 @@ Config
 Typography
 --------------------------------------------------------------------------*/
 html {
-  background: #505a5f;
+  background: #505a5f url(/images/logo.repeater.png) no-repeat center 52px;
 }
 a {
   color: #00aeb9;
@@ -57,6 +57,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 12px;
+  background: #505a5f;
 }
 p {
   color: #bdc7cc;
@@ -76,7 +77,7 @@ header h1 a {
   color: white;
   text-indent: -999em;
   display: block;
-  background: url(../images/logo.png);
+  background: #505a5f url(../images/logo.png);
   width: 190px;
   height: 160px;
   position: relative;
@@ -93,25 +94,33 @@ header nav {
 header nav li {
   display: inline;
   margin-left: 20px;
-  font-weight: 600;
+  font-weight: bold;
 }
 header nav li a {
-  font-size: 14px;
+  font-size: 17px;
   text-decoration: none;
   color: white;
   padding: 10px 5px;
 }
-header nav li a:hover, header nav li a.active {
-  text-decoration: none;
+header nav li a:hover {
+  border-bottom: 8px solid rgba(0, 174, 185, 0.5);
 }
-#content_container h1, #content_container h2 {
+header nav li a.active {
+  border-bottom: 8px solid #00aeb9;
+}
+#content_container h1,
+#content_container h2 {
   color: #fff;
   margin: 10px 0;
 }
 #content_container h1 {
-  font-size: 17px;
+  font-size: 36px;
+  margin-top: -5px;
 }
 #content_container h2 {
+  font-size: 17px;
+}
+#content_container h3 {
   opacity: 0.5;
   font-size: 14px;
   margin-top: 0;
@@ -143,32 +152,18 @@ App
   min-height: 600px;
 }
 #app #map_canvas {
-  width: 670px;
+  width: 610px;
   height: 600px;
-}
-#app #map_view {
-  position: absolute;
-  overflow: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-#app.map {
-  height: 600px;
+  margin-top: 30px;
 }
 #app.map #list_view {
   display: none;
 }
-#app.map #results_area {
-  position: absolute;
-  top: 0;
-  right: 270px;
-  bottom: 0;
-  left: 0;
+#app.list #map_view {
+  visibility: hidden;
 }
-#app.list #results_area {
-  padding-top: 10px;
+#app .view {
+  padding: 30px;
 }
 /*--------------------------------------------------------------------------
 Sidebar
@@ -249,12 +244,15 @@ School Items (with accordion discipline header)
 .school {
   position: relative;
   padding-top: 10px;
-  width: 290px;
+  width: 288px;
   display: inline-block;
   vertical-align: top;
   margin-left: 30px;
   margin-bottom: 30px;
   line-height: 140%;
+}
+.school:nth-child(2n+1) {
+  margin-left: 0;
 }
 .school h1 {
   margin: 20px 0;
