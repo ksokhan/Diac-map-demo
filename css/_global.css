@@ -177,15 +177,18 @@ Sidebar
 #sidebar .handle {
   line-height: 20px;
   margin-bottom: 5px;
-  font-weight: 600;
+  font-weight: bold;
   position: relative;
   padding: 0 5px;
+  font-size: 13px;
+  color: #ff7f00;
 }
 #sidebar .handle.showing_all:after {
   content: "(Showing All)";
   position: absolute;
   right: 0;
-  color: #ddd;
+  color: white;
+  font-size: 11px;
 }
 #sidebar .box {
   margin-bottom: 20px;
@@ -264,6 +267,6 @@ School Items (with accordion discipline header)
   color: white;
   font-weight: bold;
   text-decoration: none;
-  background: #cc6500;
+  background: #ff7f00;
   line-height: 15px;
 }
