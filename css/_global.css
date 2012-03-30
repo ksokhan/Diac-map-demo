@@ -114,6 +114,7 @@ header nav li a.active {
   margin: 10px 0;
 }
 #content_container h1 {
+  text-transform: uppercase;
   font-size: 36px;
   margin-top: -5px;
 }
