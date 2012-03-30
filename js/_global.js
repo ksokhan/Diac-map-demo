@@ -11,16 +11,10 @@ window.addEvent ('domready', function () {
 	EjsView.prototype.toClassName = function (str) {
 		return str.toLowerCase ().replace (' ', '_');
 	};
+	EjsView.prototype.truncateAt = function (str, chars) {
+		return str.slice(0, chars) + ' ...';
+	};
 
 	// Launch the app
 	var app = new SchoolBrowser ();
-
-	document.body.addEvent ('DOMUpdated', function () {
-		$$('.related_disciplines:not([data-rigged~="discipline_accordion"])').each (function (element, index) {
-			new DisciplineAccordion (element, {
-				'handles': '> li'
-			});
-			element.appendProperty ('data-rigged', 'discipline_accordion');
-		});
-	}).fireEvent ('DOMUpdated');
 });

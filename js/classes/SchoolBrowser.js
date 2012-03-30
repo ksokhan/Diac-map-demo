@@ -194,6 +194,8 @@ var SchoolBrowser = new Class ({
 		// Update the sidebar boxes
 		$$('#disciplines ! .box, #certifications ! .box, #program_durations ! .box').addClass('inactive');
 		$$('input:checked ! .box').removeClass ('inactive');
+		$$('input:not(:checked) ! li').removeClass ('active');
+		$$('input:checked ! li').addClass ('active');
 		$$('.handle').removeClass ('showing_all');
 		$$('.inactive.box !+ .handle').addClass ('showing_all');
 	},
@@ -292,6 +294,8 @@ var SchoolBrowser = new Class ({
 		{
 			// The opposite mode is...
 			var other_mode = view_mode == 'map' ? 'list' : 'map';
+
+			$('app').removeClass(other_mode).addClass(view_mode);
 
 			// Increment the z-index
 			_self.viewModeZIndex = _self.viewModeZIndex ? _self.viewModeZIndex + 1 : 1;

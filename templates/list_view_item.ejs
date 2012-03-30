@@ -9,16 +9,14 @@
 				<h2><%= school.name %></h2>
 				<h3><a href="<%= program.url %>"><%= program.url %></a></h3>
 
-				<p class="description"><%= program.description %></p>
+				<p class="description"><%= truncateAt(program.description, 120) %></p>
 
-				<a href="#">More Info &gt;</a>
-
-				<ul class="related_disciplines">
+				<ul class="discipline-tags">
 					<%
 						for (var k = 0; k < program.disciplines.length; k++) {
 							var discipline = program.disciplines[k];
 					%>
-						<li class="<%= toClassName (discipline) %> of_<%= program.disciplines.length %>"><span><%= discipline %></span></li>
+						<li class="<%= toClassName (discipline) %>"><a href="#"><%= discipline %></a></li>
 					<%
 						}
 					%>

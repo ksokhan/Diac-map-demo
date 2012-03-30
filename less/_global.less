@@ -1,302 +1,290 @@
+@import '_mixins.less';
 
-	@import '_mixins.less';
-	@import 'bootstrap/bootstrap.less';
+/*--------------------------------------------------------------------------
+Config
+--------------------------------------------------------------------------*/
+@site_width: 940px;
+@app_height: 600px;
+@sidebar_width: 240px;
+@gutter: 30px;
+@results_width: @site_width - @sidebar_width - @gutter;
 
-	/*--------------------------------------------------------------------------
-	Config
-	--------------------------------------------------------------------------*/
-	@site_width: 940px;
-	@app_height: 600px;
-	@sidebar_width: 250px;
-	@results_width: @site_width - @sidebar_width;
+@background: #505A5F;
+@deep: #323C41;
+@light: #8C969B;
+@text: #BDC7CC;
+@blue: #00AEB9;
+@orange: #CC6500;
 
-	// colours
-	@bl: #007E86;
-	@rd: #D60404;
-	@wt: #E7F2F2;
-	@drk_grey: #323C41;
-
-	/*--------------------------------------------------------------------------
-	Typography
-	--------------------------------------------------------------------------*/
-	html {
-	    font-size: 0.8em;
-	    background: #505A5F;
-	    font-family: @baseFontFamily;
+/*--------------------------------------------------------------------------
+Typography
+--------------------------------------------------------------------------*/
+html {
+	background: @background;
+}
+a {
+	color: @blue;
+}
+ul {
+	list-style-type: none;
+}
+#font {
+	.normal() {
+		font-size: 11px;
 	}
-
-	a {
-	    color: @bl;
+	.medium() {
+		font-size: 13px;
 	}
-
-
-	/*--------------------------------------------------------------------------
-	Body
-	--------------------------------------------------------------------------*/
-	body {
-		width: @site_width;
-		margin: 0 auto 40px;
-		font-family: @baseFontFamily;
-		color: #E7F2F2;
+	.large() {
+		font-size: 17px;
 	}
-	header {
-		position: relative;
-		height: 100px;
+	.x-large() {
+		font-size: 30px;
+	}
+}
 
-		h1 {
-			position: absolute;
-			top: 50%;
-			line-height: 50px;
-			font-size: 30px;
-			margin-top: -25px;
-			a {
-			    text-decoration: none;
-			    color: #FF7F00;
-			}
+/*--------------------------------------------------------------------------
+Body
+--------------------------------------------------------------------------*/
+* {
+	.box-sizing(border-box);
+}
+body {
+	width: @site_width;
+	margin: 0 auto 40px;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	#font > .normal();
+}
+p {
+	color: @text;
+}
+header {
+	position: relative;
+	height: 100px;
+
+	h1 {
+		position: absolute;
+		top: 50%;
+		line-height: 50px;
+		margin-top: -25px;
+		#font > .x-large();
+
+		a {
+			text-decoration: none;
+			color: white;
 		}
+	}
+	nav {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		margin-top: -25px;
+		line-height: 50px;
+		text-align: right;
 
-		nav {
-			position: absolute;
-			top: 50%;
-			right: 0;
-			margin-top: -25px;
-			line-height: 50px;
-			text-align: right;
+		li {
+			display: inline;
+			margin-left: 20px;
+			font-weight: 600;
 
-			li {
-				display: inline;
-				margin-left: 20px;
-				font-weight: 600;
-				//text-transform: uppercase;
-				font-size: 0.95em;
+			a {
+				#font > .medium();
+				text-decoration: none;
+				color: white;
+				padding: 10px 15px;
 
-
-				a {
-				    text-decoration: none;
-				    color: @wt;
-				    padding: 10px 15px;
-
-
-				    &:hover, &.active {
-						text-decoration: none;
-						background: @wt;
-						color: @drk_grey - #111;
-				    }
+				&:hover, &.active {
+					text-decoration: none;
 				}
 			}
 		}
 	}
-	#content_container {
+}
+#content_container {
+	h1,
+	h2 {
+		color: #fff;
+		margin: 10px 0;
+	}
+	h1 {
+		#font > .large();
+	}
+	h2 {
+		opacity: 0.5;
+		#font > .medium();
+		margin-top: 0;
+	}
+	p {
+		margin: 10px 0;
+	}
+	#bread_crumbs {
+		display: none;
 
-		h1, h2 {
-			font-size: 18px;
-			margin: 10px 0;
-			color: #fff;
-			margin-bottom: 0;
-			line-height: 130%;
-		}
-		h2 { .opacity(50); font-size: 16px; margin-top: 0;}
-
-
-		#bread_crumbs {
-		    display: none;
-			li {
-				display: inline;
-			}
+		li {
+			display: inline;
 		}
 	}
+}
 
-	/*--------------------------------------------------------------------------
-	App
-	--------------------------------------------------------------------------*/
-	#app {
-		position: relative;
-		height: @app_height;
-		margin-top: 20px;
-	}
+/*--------------------------------------------------------------------------
+App
+--------------------------------------------------------------------------*/
+#app {
+	position: relative;
+	margin-top: 20px;
+
 	#results_area {
-		position: absolute;
-		top: 0;
-		right: @sidebar_width;
-		bottom: 0;
-		left: 0;
 		width: @results_width;
-
-		.view {
-			position: absolute;
-			overflow: auto;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			background: @drk_grey;
-		}
+		background: @deep;
+		border-top: 8px solid @light;
 	}
 	#map_canvas {
 		width: @results_width;
 		height: @app_height;
 	}
-
-	/*--------------------------------------------------------------------------
-	Sidebar
-	--------------------------------------------------------------------------*/
-	#sidebar {
+	#map_view {
 		position: absolute;
+		overflow: auto;
 		top: 0;
 		right: 0;
-		left: @results_width;
-		width: @sidebar_width;
-		overflow-y: auto;
-
-		label {
-		    color: @wt;
-		}
-		.handle {
-			line-height: 20px;
-			margin-bottom: 5px;
-			text-indent: 25px;
-			color: @wt;
-			font-weight: 600;
-			position: relative;
-
-			&.showing_all:after {
-				content: "(Showing All)";
-				position: absolute;
-				right: 0;
-				color: #ddd;
-			}
-		}
-		.box {
-		    margin-bottom: 20px;
-		    * {
-		    	.transitions (all, 0.1s, ease-in-out);
-		    }
-
-		    ul {
-				list-style: none;
-
-					li {
-					    input[type=checkbox] {
-					    	margin-top: -4px;
-
-					    	&:not(:checked) {
-					    		opacity: 0;
-					    	}
-					    }
-					}
-					&:hover {
-						input[type=checkbox] {
-					    	&:not(:checked) {
-					    		opacity: 1;
-					    	}
-					    }
-					}
-		    }
-		    &.inactive {
-		    	opacity: 0.4;
-		    	input[type=checkbox] {
-		    		opacity: 0;
-		    	}
-
-		    	&:hover {
-		    		opacity: 0.8;
-		    		input[type=checkbox] {
-		    			opacity: 1;
-		    		}
-		    	}
-		    }
-		}
+		bottom: 0;
+		left: 0;
 	}
+	&.map {
+		height: @app_height;
 
-	/*--------------------------------------------------------------------------
-	View Modes
-	--------------------------------------------------------------------------*/
-	#view_mode_triggers {
-		.active a {
-			color: green;
+		#list_view {
+			display: none;
 		}
-		.inactive a {
-			color: #ccc;
-		}
-	}
-
-	/*--------------------------------------------------------------------------
-	School Items (with accordion discipline header)
-	--------------------------------------------------------------------------*/
-	@architecture: #D03A22;
-	@fashion_design: #C1147D;
-	@graphic_design: #00AEB9;
-	@industrial_design: #CCB51B;
-	@interior_design: #2E08B2;
-	@landscape_architecture: #14B127;
-	.school {
-		position: relative;
-		margin: 10px 4% 30px;
-		padding-top: 10px;
-		width: 40%;
-		display: inline-block;
-		vertical-align: top;
-
-		h2 {
-		    font-size: 1em;
-		    margin-top: 0;
-
-
-		}
-
-		h3 {
-			a {
-				color: @bl;
-				font-size: 13px;
-				text-decoration: none;
-				border-bottom: solid 1px @bl;
-		    }
-
-		}
-
-		.related_disciplines {
-			font-size: 0;
-			line-height: 0 !important;
-			margin: 0 !important;
-			list-style-type: none;
-			width: 100%;
+		#results_area {
 			position: absolute;
 			top: 0;
-			overflow: hidden;
-			white-space: nowrap;
+			right: @sidebar_width + @gutter;
+			bottom: 0;
+			left: 0;
+		}
+	}
+	&.list {
 
-			* {
-			    .transitions (all, 0.5s, ease-in-out);
-			}
-			&:hover {
-				li {
-					line-height: 18px !important;
+	}
+}
 
-					&:hover span {
-						opacity: 1;
-						font-size: 12px;
-						line-height: 25px !important;
-					}
-				}
-			}
+/*--------------------------------------------------------------------------
+Sidebar
+--------------------------------------------------------------------------*/
+#sidebar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: @results_width + @gutter;
+	width: @sidebar_width;
+	overflow-y: auto;
+	background: @deep;
+	padding: 20px;
+
+	label {
+	}
+	.handle {
+		line-height: 20px;
+		margin-bottom: 5px;
+		font-weight: 600;
+		position: relative;
+		padding: 0 5px;
+
+		&.showing_all:after {
+			content: "(Showing All)";
+			position: absolute;
+			right: 0;
+			color: #ddd;
+		}
+	}
+	.box {
+		margin-bottom: 20px;
+
+		* {
+			.transitions (all, 0.1s, ease-in-out);
+		}
+		ul {
+			list-style: none;
+
 			li {
-				vertical-align: top;
-				overflow: hidden;
-				line-height: 0 !important;
+				line-height: 20px;
+				padding: 0 5px;
 
-				span {
-					opacity: 0;
-					padding: 0 10px;
-					font-size: 5px;
-					line-height: 5px;
+				label {
+					display: block;
 				}
+				input {
+					display: none;
+				}
+				&.active {
+					background: @blue;
+				}
+			}
+		}
+		&.inactive {
+			opacity: 0.5;
 
-				&.architecture { background-color: @architecture; }
-				&.fashion_design { background-color: @fashion_design; }
-				&.graphic_design { background-color: @graphic_design; }
-				&.industrial_design { background-color: @industrial_design; }
-				&.interior_design { background-color: @interior_design; }
-				&.landscape_architecture { background-color: @landscape_architecture; }
+			&:hover {
+				opacity: 0.8;
 			}
 		}
 	}
+}
+
+/*--------------------------------------------------------------------------
+View Modes
+--------------------------------------------------------------------------*/
+#view_mode_triggers {
+	.active a {
+		color: green;
+	}
+	.inactive a {
+		color: #ccc;
+	}
+}
+
+/*--------------------------------------------------------------------------
+School Items (with accordion discipline header)
+--------------------------------------------------------------------------*/
+.school {
+	position: relative;
+	padding-top: 10px;
+	width: (@results_width - 90) / 2;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 30px;
+	margin-bottom: 30px;
+
+	h1 {
+		margin: 20px 0;
+	}
+	h2 {
+		#font > .medium();
+		margin-top: 0;
+	}
+	h3 {
+		a {
+			#font > .normal();
+			color: @blue;
+			text-decoration: none;
+			border-bottom: solid 1px @blue;
+		}
+	}
+	.discipline-tags {
+		li {
+			display: inline;
+
+			a {
+				display: inline-block;
+				padding: 2px 5px;
+				color: white;
+				font-weight: bold;
+				text-decoration: none;
+				background: @orange;
+				line-height: 15px;
+			}
+		}
+	}
+}

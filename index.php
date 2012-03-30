@@ -7,9 +7,10 @@
 
 		<!--HTML5 RESET-->
 		<!-- <link rel="stylesheet" type="text/css" href="css/html5reset.css" /> -->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic' rel='stylesheet' type='text/css'>
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic" rel="stylesheet" type="text/css">
 
 		<!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="css/html5reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/_global.css" />
 
 		<!--MooTools Core-->
@@ -20,7 +21,6 @@
 		<script type="text/javascript" src="libraries/ejs/ejs.js"></script>
 
 		<!-- Scripts -->
-		<script type="text/javascript" src="js/classes/DisciplineAccordion.js"></script>
 		<script type="text/javascript" src="js/classes/SchoolBrowser.js"></script>
 		<script type="text/javascript" src="js/_global.js"></script>
 
