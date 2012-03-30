@@ -34,7 +34,7 @@ Config
 Typography
 --------------------------------------------------------------------------*/
 html {
-  background: #505a5f url(../images/logo.repeater.png) no-repeat center 52px;
+  background: #505a5f;
 }
 a {
   color: #00aeb9;
