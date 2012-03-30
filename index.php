@@ -42,7 +42,7 @@
 			<nav>
 				<ul>
 					<li><a href="#">About Design</a></li>
-					<li><a href="#">Case Studies</a></li>
+					<li><a href="#">Success Stories</a></li>
 					<li><a class="active" href="#">Design Ed</a></li>
 					<li><a href="#">Connect with Designers</a></li>
 				</ul>
