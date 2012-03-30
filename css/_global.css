@@ -124,9 +124,11 @@ header nav li a.active {
   opacity: 0.5;
   font-size: 14px;
   margin-top: 0;
+  margin-bottom: 10px;
 }
 #content_container p {
   margin: 10px 0;
+  line-height: 18px;
 }
 #content_container #bread_crumbs {
   display: none;
