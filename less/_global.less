@@ -29,11 +29,14 @@ ul {
 	list-style-type: none;
 }
 #font {
-	.normal() {
+	.small() {
 		font-size: 11px;
 	}
+	.normal() {
+		font-size: 12px;
+	}
 	.medium() {
-		font-size: 13px;
+		font-size: 14px;
 	}
 	.large() {
 		font-size: 17px;
@@ -61,18 +64,25 @@ p {
 }
 header {
 	position: relative;
-	height: 100px;
+	height: 180px;
 
 	h1 {
 		position: absolute;
-		top: 50%;
+		top: 20px;
 		line-height: 50px;
-		margin-top: -25px;
 		#font > .x-large();
 
 		a {
 			text-decoration: none;
 			color: white;
+			text-indent: -999em;
+			display: block;
+
+			background: url(../images/logo.png);
+			width: 190px;
+			height: 160px;
+			position: relative;
+			left: -50px;
 		}
 	}
 	nav {
@@ -92,7 +102,7 @@ header {
 				#font > .medium();
 				text-decoration: none;
 				color: white;
-				padding: 10px 15px;
+				padding: 10px 5px;
 
 				&:hover, &.active {
 					text-decoration: none;
@@ -138,6 +148,8 @@ App
 		width: @results_width;
 		background: @deep;
 		border-top: 8px solid @light;
+		.box-sizing(content-box);
+		min-height: @app_height;
 	}
 	#map_canvas {
 		width: @results_width;
@@ -189,7 +201,7 @@ Sidebar
 	}
 	.handle {
 		line-height: 20px;
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 		font-weight: bold;
 		position: relative;
 		padding: 0 5px;
@@ -197,11 +209,11 @@ Sidebar
 		color: @orange;
 
 		&.showing_all:after {
-			content: "(Showing All)";
+			content: " (Showing All)";
 			position: absolute;
 			right: 0;
 			color: white;
-			#font > .normal();
+			#font > .small();
 		}
 	}
 	.box {
@@ -214,8 +226,9 @@ Sidebar
 			list-style: none;
 
 			li {
-				line-height: 20px;
+				line-height: 23px;
 				padding: 0 5px;
+				margin-bottom: 4px;
 
 				label {
 					display: block;
@@ -261,6 +274,7 @@ School Items (with accordion discipline header)
 	vertical-align: top;
 	margin-left: 30px;
 	margin-bottom: 30px;
+	line-height: 140%;
 
 	h1 {
 		margin: 20px 0;

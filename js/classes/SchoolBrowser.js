@@ -139,7 +139,8 @@ var SchoolBrowser = new Class ({
 			var new_marker = new google.maps.Marker ({
 				'map': _self.google_map,
 				'position': new google.maps.LatLng (school.geocoded_location.x, school.geocoded_location.y),
-				'title': school.name
+				'title': school.name,
+				icon : './images/pin.png'
 			});
 
 			// The marker needs to how who its school is

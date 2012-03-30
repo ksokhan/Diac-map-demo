@@ -56,25 +56,31 @@ body {
   margin: 0 auto 40px;
   font-family: 'Open Sans', sans-serif;
   color: white;
-  font-size: 11px;
+  font-size: 12px;
 }
 p {
   color: #bdc7cc;
 }
 header {
   position: relative;
-  height: 100px;
+  height: 180px;
 }
 header h1 {
   position: absolute;
-  top: 50%;
+  top: 20px;
   line-height: 50px;
-  margin-top: -25px;
   font-size: 30px;
 }
 header h1 a {
   text-decoration: none;
   color: white;
+  text-indent: -999em;
+  display: block;
+  background: url(../images/logo.png);
+  width: 190px;
+  height: 160px;
+  position: relative;
+  left: -50px;
 }
 header nav {
   position: absolute;
@@ -90,17 +96,15 @@ header nav li {
   font-weight: 600;
 }
 header nav li a {
-  font-size: 13px;
+  font-size: 14px;
   text-decoration: none;
   color: white;
-  padding: 10px 15px;
+  padding: 10px 5px;
 }
-header nav li a:hover,
-header nav li a.active {
+header nav li a:hover, header nav li a.active {
   text-decoration: none;
 }
-#content_container h1,
-#content_container h2 {
+#content_container h1, #content_container h2 {
   color: #fff;
   margin: 10px 0;
 }
@@ -109,7 +113,7 @@ header nav li a.active {
 }
 #content_container h2 {
   opacity: 0.5;
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 0;
 }
 #content_container p {
@@ -132,6 +136,11 @@ App
   width: 670px;
   background: #323c41;
   border-top: 8px solid #8c969b;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+  min-height: 600px;
 }
 #app #map_canvas {
   width: 670px;
@@ -176,15 +185,15 @@ Sidebar
 }
 #sidebar .handle {
   line-height: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: bold;
   position: relative;
   padding: 0 5px;
-  font-size: 13px;
+  font-size: 14px;
   color: #ff7f00;
 }
 #sidebar .handle.showing_all:after {
-  content: "(Showing All)";
+  content: " (Showing All)";
   position: absolute;
   right: 0;
   color: white;
@@ -206,8 +215,9 @@ Sidebar
   list-style: none;
 }
 #sidebar .box ul li {
-  line-height: 20px;
+  line-height: 23px;
   padding: 0 5px;
+  margin-bottom: 4px;
 }
 #sidebar .box ul li label {
   display: block;
@@ -244,16 +254,17 @@ School Items (with accordion discipline header)
   vertical-align: top;
   margin-left: 30px;
   margin-bottom: 30px;
+  line-height: 140%;
 }
 .school h1 {
   margin: 20px 0;
 }
 .school h2 {
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 0;
 }
 .school h3 a {
-  font-size: 11px;
+  font-size: 12px;
   color: #00aeb9;
   text-decoration: none;
   border-bottom: solid 1px #00aeb9;
