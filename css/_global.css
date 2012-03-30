@@ -189,7 +189,7 @@ Sidebar
   font-weight: bold;
   position: relative;
   padding: 0 5px;
-  font-size: 14px;
+  font-size: 12px;
   color: #ff7f00;
 }
 #sidebar .handle.showing_all:after {
