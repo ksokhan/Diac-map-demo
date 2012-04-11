@@ -108,8 +108,7 @@ header nav li a:hover {
 header nav li a.active {
   border-bottom: 8px solid #00aeb9;
 }
-#content_container h1,
-#content_container h2 {
+#content_container h1, #content_container h2 {
   color: #fff;
   margin: 10px 0;
 }
